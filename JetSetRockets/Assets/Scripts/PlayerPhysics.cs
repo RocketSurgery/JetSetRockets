@@ -6,9 +6,12 @@ public class PlayerPhysics : MonoBehaviour
 	// Movement
 	[SerializeField] int defaultMaxSpeed;
 	int currentMaxSpeed;
-
 	float currentSpeed;
 
+	float stopStrength = 0.0f;
+	[SerializeField] float stoppingTime = 0.5f;
+
+	Vector3 inputVec = Vector3.zero;
 	Vector3 moveVec = Vector3.zero;
 
 	// Jumping
@@ -21,7 +24,15 @@ public class PlayerPhysics : MonoBehaviour
 	[SerializeField] float maxGravity;
 	[SerializeField] float gravityRate;
 	float currentGravity = 0.0f;
-	float groundDist = 0.75f;
+	float groundDist = 0.7f;
+
+	ContactPoint[] lastContactPoints = new ContactPoint[0];
+
+	[SerializeField] float jumpTime = 0.2f;
+	float jumpTimer = 0.0f;
+
+	[SerializeField] float lateJumpTime = 0.0f;
+	float lateJumpTimer = 0.0f;
 
 	bool isGrounded = false;
 
@@ -35,35 +46,58 @@ public class PlayerPhysics : MonoBehaviour
 	// Update is called once per frame
 	public void PhysicsUpdate () 
 	{
-		Movement ();
 		Jump ();
+		CalculateDown ();
 		Alignment();
+
 		Gravity ();
+		Movement ();
 
 		rigidbody.AddForce (moveVec + (downVec * currentGravity));
+		Stop ();
 	}
 
 	void OnCollisionStay(Collision collision)
 	{
-		CalculateDown (collision.contacts);
+		lastContactPoints = collision.contacts;
 	}
 
 	void Movement()
 	{
-		Vector3 inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+		inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
-		//moveVec = Camera.main.transform.TransformDirection (inputVec.normalized);
-		moveVec = transform.TransformDirection(inputVec.normalized);
+		moveVec = Camera.main.transform.TransformDirection (inputVec);
+		moveVec -= Vector3.Project (moveVec, -downVec);
 		moveVec *= currentSpeed;
+	}
+
+	void Stop()
+	{
+		if(inputVec.magnitude < WadeUtils.SMALLNUM && isGrounded)
+		{
+			Mathf.SmoothDamp(0.0f, 1.0f, ref stopStrength, stoppingTime); 
+			stopStrength = Mathf.Clamp(stopStrength, 0.0f, 1.0f);
+
+			Vector3 adjustedVel = rigidbody.velocity - Vector3.Project (rigidbody.velocity, -downVec);
+			Vector3 negForce = -(rigidbody.mass * adjustedVel) * stopStrength;
+			rigidbody.AddForce(negForce);
+		}
+		else
+		{
+			stopStrength = 0.0f;
+		}
 	}
 
 	void Jump()
 	{
-		if(Input.GetButtonDown("Jump") && isGrounded)
+		if(isGrounded && Input.GetButtonDown("Jump") && jumpTimer > jumpTime)
 		{
 			currentGravity = 0.0f;
 			rigidbody.AddForce(-downVec * jumpForce);
+			jumpTimer = 0.0f;
 		}
+
+		jumpTimer += Time.deltaTime;
 	}
 
 	void Alignment()
@@ -79,24 +113,29 @@ public class PlayerPhysics : MonoBehaviour
 		{
 			isGrounded = true;
 			currentGravity = 0.0f;
+
+			if(jumpTimer > jumpTime)
+				lateJumpTimer = 0.0f;
 		}
-		else
+		else if(lateJumpTimer > lateJumpTime)
 		{
 			isGrounded = false;
 			currentGravity += gravityRate;
 		}
 
+		lateJumpTimer += Time.deltaTime;
 		currentGravity = Mathf.Clamp (currentGravity, 0, maxGravity);
 	}
 
-	void CalculateDown(ContactPoint[] contactPoints)
+	void CalculateDown()
 	{
-		Debug.Log("COL");
+		if(lastContactPoints.Length < 1)
+			return;
 
 		int counter;
-		for(counter = 0; counter < contactPoints.Length; counter++)
+		for(counter = 0; counter < lastContactPoints.Length; counter++)
 		{
-			downVec -= contactPoints[counter].normal;
+			downVec -= lastContactPoints[counter].normal;
 		}
 		downVec = (downVec * 1/counter).normalized;
 	}
