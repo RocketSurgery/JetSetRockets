@@ -1,22 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerCamera : MonoBehaviour 
-{
-	[SerializeField] Transform cam;
+public class PlayerCamera : MonoBehaviour {
 
-	// Follow
-	Vector3 offset;
-	[SerializeField] int followSpeed;
+	public float baseMoveSpeed = 10f;
 
-	void Start()
-	{
-		offset = transform.position - cam.position;
-	}
+	public float orbitSpeed = 500f;
+	public float orbitDistance = 10f;
+
+	// Use this for initialization
+	void Start () { }
 
 	// Update is called once per frame
-	public void CameraUpdate () 
+	public void CameraUpdate  ()
 	{
-		cam.position = Vector3.Lerp (cam.position, transform.position - offset, Time.deltaTime * followSpeed);
+		float yRot = Input.GetAxis("Mouse X");
+
+		// rotate Player Controller
+		transform.RotateAround( transform.position, transform.up, yRot * Time.deltaTime * orbitSpeed );
 	}
 }
