@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerCamera : MonoBehaviour 
+public class PlayerCamera : MonoBehaviour
 {
 	[SerializeField] Transform camObj;
 	[SerializeField] Transform camTarget;
@@ -14,7 +14,7 @@ public class PlayerCamera : MonoBehaviour
 	[SerializeField] Vector2 lookSpeed = new Vector2(1.0f, 1.0f);
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
 		cam = Camera.main.transform;
 		camOffset = transform.position - cam.position;
@@ -26,7 +26,7 @@ public class PlayerCamera : MonoBehaviour
 		//Lock cursor
 		if(Input.GetMouseButtonDown(0))
 			Screen.lockCursor = !Screen.lockCursor;
-		
+
 		//		//Rotate camera based on mouse move
 		camObj.RotateAround(camTarget.position, camObj.right, -Input.GetAxis("Mouse Y") * lookSpeed.y);
 		camObj.RotateAround(camTarget.position, camObj.up, Input.GetAxis("Mouse X") * lookSpeed.x);
