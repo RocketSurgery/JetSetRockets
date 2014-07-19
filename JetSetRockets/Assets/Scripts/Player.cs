@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
 	void Update()
 	{
-		//pAnimation.AnimationUpdate ();
+		pAnimation.AnimationUpdate ();
 	}
 
 	void FixedUpdate()
