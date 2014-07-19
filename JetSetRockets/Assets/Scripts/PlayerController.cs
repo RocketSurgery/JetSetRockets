@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
-	public Transform playerCamera;
+	private Transform playerCamera;
 
 	public float baseMoveSpeed = 10f;
 
@@ -11,7 +11,10 @@ public class PlayerController : MonoBehaviour {
 	public float orbitDistance = 10f;
 
 	// Use this for initialization
-	void Start () { }
+	void Start ()
+	{
+		playerCamera = Camera.main.transform;
+	}
 	
 	// Update is called once per frame
 	void Update ()
@@ -25,10 +28,6 @@ public class PlayerController : MonoBehaviour {
 		// make player face in correct direction
 		Vector3 offset = ( playerCamera.position - transform.position ).normalized;
 		transform.LookAt( transform.position - offset );
-
-		// move player around
-		Vector3 movement = ( new Vector3( Input.GetAxis( "Horizontal" ), 0f, Input.GetAxis( "Vertical" ) ) ).normalized;
-		transform.Translate( movement * Time.deltaTime * baseMoveSpeed );
 
 		// reset camera offset from player
 		playerCamera.position = transform.position + offset * orbitDistance;
