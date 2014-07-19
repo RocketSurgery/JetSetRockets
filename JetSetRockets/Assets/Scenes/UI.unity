@@ -434,6 +434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camObj: {fileID: 599936764}
   camTarget: {fileID: 1516719323}
+  cam: {fileID: 1116855390}
   followSpeed: 15
   lookSpeed: {x: 1, y: 1}
 --- !u!114 &383254788
@@ -448,6 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e1928bc8bea43458dfa65ef0beba72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 1116855390}
   defaultMaxSpeed: 50
   stoppingTime: .5
   jumpForce: 150
@@ -536,6 +538,10 @@ Prefab:
     - target: {fileID: 11400002, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
       propertyPath: inputName
       value: P1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
@@ -711,7 +717,7 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: .5
     width: 1
     height: .5
   near clip plane: .300000012
@@ -1342,7 +1348,7 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: .5
+    y: 0
     width: 1
     height: .5
   near clip plane: .300000012
@@ -2013,7 +2019,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
       propertyPath: m_NormalizedViewPortRect.y
-      value: .5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
       propertyPath: m_NormalizedViewPortRect.height
@@ -2026,6 +2032,10 @@ Prefab:
     - target: {fileID: 11400002, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
       propertyPath: inputName
       value: P2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
@@ -2191,6 +2201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e1928bc8bea43458dfa65ef0beba72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 606565390}
   defaultMaxSpeed: 50
   stoppingTime: .5
   jumpForce: 150
@@ -2264,6 +2275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camObj: {fileID: 872234190}
   camTarget: {fileID: 2080853903}
+  cam: {fileID: 606565390}
   followSpeed: 15
   lookSpeed: {x: 5, y: 2}
 --- !u!114 &2083624703

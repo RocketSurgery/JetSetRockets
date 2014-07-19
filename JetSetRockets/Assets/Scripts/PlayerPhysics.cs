@@ -4,6 +4,8 @@ using System.Collections;
 
 public class PlayerPhysics : MonoBehaviour
 {
+	[SerializeField] Transform cam;
+
 	// Movement
 	[SerializeField] int defaultMaxSpeed;
 	int currentMaxSpeed;
@@ -72,7 +74,7 @@ public class PlayerPhysics : MonoBehaviour
 	{
 		inputVec = new Vector3(Input.GetAxis( inputName + " Horizontal"), 0, Input.GetAxis( inputName + " Vertical" ));
 
-		moveVec = Camera.main.transform.TransformDirection(inputVec);
+		moveVec = cam.TransformDirection(inputVec);
 		moveVec -= Vector3.Project(moveVec, -downVec);
 		moveVec *= currentSpeed;
 	}

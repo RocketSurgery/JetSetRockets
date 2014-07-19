@@ -442,6 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e1928bc8bea43458dfa65ef0beba72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 400000}
   defaultMaxSpeed: 50
   stoppingTime: .5
   jumpForce: 150
@@ -480,6 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camObj: {fileID: 400004}
   camTarget: {fileID: 400012}
+  cam: {fileID: 400000}
   followSpeed: 15
   lookSpeed: {x: 1, y: 1}
 --- !u!114 &11400006
