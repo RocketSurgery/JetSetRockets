@@ -11,7 +11,6 @@ GameObject:
   - 20: {fileID: 2000000}
   - 92: {fileID: 9200000}
   - 124: {fileID: 12400000}
-  - 81: {fileID: 8100000}
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: MainCamera
@@ -425,13 +424,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!81 &8100000
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
 --- !u!92 &9200000
 Behaviour:
   m_ObjectHideFlags: 1
@@ -474,6 +466,7 @@ MonoBehaviour:
   pPhysics: {fileID: 11400000}
   pCamera: {fileID: 11400004}
   pAnimation: {fileID: 11400006}
+  inputName: 
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

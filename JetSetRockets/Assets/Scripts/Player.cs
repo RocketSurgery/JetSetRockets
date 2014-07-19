@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class Player : MonoBehaviour
@@ -6,6 +7,7 @@ public class Player : MonoBehaviour
 	[SerializeField] PlayerPhysics pPhysics;
 	[SerializeField] PlayerCamera pCamera;
 	[SerializeField] PlayerAnimation pAnimation;
+	[SerializeField] String inputName;
 
 	void Start()
 	{
@@ -14,12 +16,12 @@ public class Player : MonoBehaviour
 
 	void Update()
 	{
-		pAnimation.AnimationUpdate ();
+		pAnimation.AnimationUpdate();
 	}
 
 	void FixedUpdate()
 	{
-		pCamera.CameraUpdate ();
-		pPhysics.PhysicsUpdate ();
+		pCamera.CameraUpdate( inputName );
+		pPhysics.PhysicsUpdate( inputName );
 	}
 }

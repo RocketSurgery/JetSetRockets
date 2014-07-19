@@ -380,7 +380,7 @@ Transform:
   m_PrefabInternal: {fileID: 1813001936}
   m_GameObject: {fileID: 383254783}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.35671782, y: 1, z: -11.169405}
+  m_LocalPosition: {x: 4.17209148, y: 1, z: -11.169405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 672073567}
@@ -473,6 +473,7 @@ MonoBehaviour:
   pPhysics: {fileID: 383254788}
   pCamera: {fileID: 383254787}
   pAnimation: {fileID: 383254786}
+  inputName: P2
 --- !u!1001 &560101216
 Prefab:
   m_ObjectHideFlags: 0
@@ -482,7 +483,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400014, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.75800323
+      value: -2.06059909
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -527,6 +528,14 @@ Prefab:
     - target: {fileID: 2000000, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
       propertyPath: m_NormalizedViewPortRect.height
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
+      propertyPath: inputName
+      value: P1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
+      propertyPath: inputName
+      value: P1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
@@ -665,7 +674,6 @@ GameObject:
   - 20: {fileID: 606565389}
   - 92: {fileID: 606565388}
   - 124: {fileID: 606565387}
-  - 81: {fileID: 606565386}
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: MainCamera
@@ -673,14 +681,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &606565386
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8100000, guid: 22de5828581ff604692f9c9205d88bd0,
-    type: 2}
-  m_PrefabInternal: {fileID: 560101216}
-  m_GameObject: {fileID: 606565385}
-  m_Enabled: 1
 --- !u!124 &606565387
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1293,7 +1293,6 @@ GameObject:
   - 20: {fileID: 1116855394}
   - 92: {fileID: 1116855393}
   - 124: {fileID: 1116855392}
-  - 81: {fileID: 1116855391}
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: MainCamera
@@ -1313,14 +1312,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 383254784}
   m_RootOrder: 4
---- !u!81 &1116855391
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8100000, guid: 22de5828581ff604692f9c9205d88bd0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1813001936}
-  m_GameObject: {fileID: 1116855389}
-  m_Enabled: 1
 --- !u!124 &1116855392
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1986,7 +1977,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400014, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.35671782
+      value: 4.17209148
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2027,6 +2018,14 @@ Prefab:
     - target: {fileID: 2000000, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
       propertyPath: m_NormalizedViewPortRect.height
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
+      propertyPath: inputName
+      value: P2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
+      propertyPath: inputName
+      value: P2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22de5828581ff604692f9c9205d88bd0, type: 2}
@@ -2217,6 +2216,7 @@ MonoBehaviour:
   pPhysics: {fileID: 2083624698}
   pCamera: {fileID: 2083624702}
   pAnimation: {fileID: 2083624703}
+  inputName: P1
 --- !u!4 &2083624700
 Transform:
   m_ObjectHideFlags: 0
@@ -2224,7 +2224,7 @@ Transform:
   m_PrefabInternal: {fileID: 560101216}
   m_GameObject: {fileID: 2083624697}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.75800323, y: 1, z: -11.169405}
+  m_LocalPosition: {x: -2.06059909, y: 1, z: -11.169405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1565065780}

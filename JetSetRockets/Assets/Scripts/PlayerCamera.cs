@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class PlayerCamera : MonoBehaviour
@@ -21,15 +22,15 @@ public class PlayerCamera : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	public void CameraUpdate  ()
+	public void CameraUpdate( String inputName )
 	{
 		//Lock cursor
 		if(Input.GetMouseButtonDown(0))
 			Screen.lockCursor = !Screen.lockCursor;
 
-		//		//Rotate camera based on mouse move
-		camObj.RotateAround(camTarget.position, camObj.right, -Input.GetAxis("Mouse Y") * lookSpeed.y);
-		camObj.RotateAround(camTarget.position, camObj.up, Input.GetAxis("Mouse X") * lookSpeed.x);
+		// Rotate camera based on mouse move
+		camObj.RotateAround(camTarget.position, camObj.right, -Input.GetAxis( inputName + " Mouse Y" ) * lookSpeed.y);
+		camObj.RotateAround(camTarget.position, camObj.up, Input.GetAxis( inputName + " Mouse X" ) * lookSpeed.x);
 
 		camObj.position = Vector3.Lerp (camObj.position, camTarget.position - (cam.rotation * camOffset), Time.deltaTime * followSpeed);
 

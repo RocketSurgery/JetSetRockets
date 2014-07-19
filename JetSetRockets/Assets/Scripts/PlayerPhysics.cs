@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
-public class PlayerPhysics : MonoBehaviour 
+public class PlayerPhysics : MonoBehaviour
 {
 	// Movement
 	[SerializeField] int defaultMaxSpeed;
@@ -42,24 +43,24 @@ public class PlayerPhysics : MonoBehaviour
 	bool isGrounded = false;
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
 		downVec = -transform.up;
 		currentSpeed = defaultMaxSpeed;
 	}
-	
+
 	// Update is called once per frame
-	public void PhysicsUpdate () 
+	public void PhysicsUpdate( String inputName )
 	{
-		Jump ();
-		CalculateDown ();
+		Jump();
+		CalculateDown();
 		Alignment();
 
-		Gravity ();
-		Movement ();
+		Gravity();
+		Movement( inputName );
 
-		rigidbody.AddForce (moveVec + (downVec * currentGravity));
-		Stop ();
+		rigidbody.AddForce(moveVec + (downVec * currentGravity));
+		Stop();
 	}
 
 	void OnCollisionStay(Collision collision)
@@ -67,12 +68,12 @@ public class PlayerPhysics : MonoBehaviour
 		lastContactPoints = collision.contacts;
 	}
 
-	void Movement()
+	void Movement( String inputName )
 	{
-		inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+		inputVec = new Vector3(Input.GetAxis( inputName + " Horizontal"), 0, Input.GetAxis( inputName + " Vertical" ));
 
-		moveVec = Camera.main.transform.TransformDirection (inputVec);
-		moveVec -= Vector3.Project (moveVec, -downVec);
+		moveVec = Camera.main.transform.TransformDirection(inputVec);
+		moveVec -= Vector3.Project(moveVec, -downVec);
 		moveVec *= currentSpeed;
 	}
 
@@ -80,7 +81,7 @@ public class PlayerPhysics : MonoBehaviour
 	{
 		if(inputVec.magnitude < WadeUtils.SMALLNUM && isGrounded)
 		{
-			Mathf.SmoothDamp(0.0f, 1.0f, ref stopStrength, stoppingTime); 
+			Mathf.SmoothDamp(0.0f, 1.0f, ref stopStrength, stoppingTime);
 			stopStrength = Mathf.Clamp(stopStrength, 0.0f, 1.0f);
 
 			Vector3 adjustedVel = rigidbody.velocity - Vector3.Project (rigidbody.velocity, -downVec);
