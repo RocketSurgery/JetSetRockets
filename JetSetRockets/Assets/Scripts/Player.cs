@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
 		pWeapon.player = this;
 
 		pCamera.camOffset = transform.position - cam.transform.position;
+		pGUI.cam = cam;
 	}
 
 	void Update()

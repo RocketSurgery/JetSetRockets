@@ -3,31 +3,22 @@ using System.Collections;
 
 public class PlayerGUI : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-
-	}
-
-	// Update is called once per frame
-	void Update () {
-
-	}
+	[HideInInspector] public Camera cam;
 
 	void OnGUI()
 	{
-		// Make a background box
-		GUI.Box(new Rect(10,10,100,90), "Loader Menu");
+		Vector3 origin = cam.ViewportToScreenPoint( new Vector3( 0f, 0f, 0f ) );
 
-		// Make the first button. If it is pressed, Application.Loadlevel (1) will be executed
-		if(GUI.Button(new Rect(20,40,80,20), "Level 1"))
+		// Make a background box
+		GUI.Box( new Rect( origin.x + 10, origin.y + 10, 100, 90 ), "Loader Menu" );
+
+		if( GUI.Button( new Rect( origin.x + 20, origin.y + 40, 80, 20 ), "Level 1" ) )
 		{
-			Application.LoadLevel(1);
 		}
 
 		// Make the second button.
-		if(GUI.Button(new Rect(20,70,80,20), "Level 2"))
+		if( GUI.Button( new Rect( origin.x + 20, origin.y + 70, 80, 20 ), "Level 2" ) )
 		{
-			Application.LoadLevel(2);
 		}
 	}
 }
