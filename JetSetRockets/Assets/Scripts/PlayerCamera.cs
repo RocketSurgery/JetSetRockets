@@ -3,18 +3,17 @@ using System.Collections;
 
 public class PlayerCamera : MonoBehaviour 
 {
+	[HideInInspector] public Player player;
+
+	[SerializeField] Transform camObj;
+	[SerializeField] Transform camTarget;
 	Transform cam;
 
 	Vector3 camOffset;
 	Vector3 currentZoom = Vector3.zero;
-	[SerializeField] float zoomSpeed = 3.0f;
 
-	public float baseMoveSpeed = 10f;
-
-	public float orbitSpeed = 500f;
-	public float orbitDistance = 10f;
-
-	bool autoZoom = false;
+	[SerializeField] float followSpeed = 7.0f;
+	[SerializeField] Vector2 lookSpeed = new Vector2(1.0f, 1.0f);
 
 	// Use this for initialization
 	void Start () 
@@ -26,29 +25,24 @@ public class PlayerCamera : MonoBehaviour
 	// Update is called once per frame
 	public void CameraUpdate  ()
 	{
-		//float yRot = Input.GetAxis("Mouse X");
-
-		// rotate Player Controller
-		//Camera.main.transform.RotateAround( transform.position, transform.up, yRot * Time.deltaTime * orbitSpeed );
-
-		CameraControl ();
-	}
-
-	void CameraControl()
-	{
 		//Lock cursor
 		if(Input.GetMouseButtonDown(0))
-			Screen.lockCursor = !Screen.lockCursor;
+			Screen.lockCursor = true;
 
-		//Rotate camera based on mouse move
-		cam.RotateAround(transform.position, cam.right, -Input.GetAxis("Mouse Y"));
-		cam.RotateAround(transform.position, transform.up, Input.GetAxis("Mouse X"));
+		if(Input.GetKeyDown(KeyCode.Escape))
+			Screen.lockCursor = false;
+		
+		//		//Rotate camera based on mouse move
+		camObj.RotateAround(camTarget.position, camObj.right, -Input.GetAxis("Mouse Y") * lookSpeed.y);
+		camObj.RotateAround(camTarget.position, camObj.up, Input.GetAxis("Mouse X") * lookSpeed.x);
 
-		Vector3 localEuler = cam.localEulerAngles;
+		camObj.position = camTarget.position - (cam.rotation * camOffset);
+
+		Vector3 localEuler = camObj.localEulerAngles;
 		localEuler.z = 0;
-		cam.localRotation = Quaternion.Euler (localEuler);
+		camObj.localEulerAngles = localEuler;
 
-		Vector3 targetPosition = transform.position - (cam.rotation * camOffset);
-		cam.position = Vector3.Lerp(cam.position, targetPosition, Time.deltaTime*5);
+		cam.position = Vector3.Lerp (cam.position, camObj.position, Time.deltaTime * followSpeed);
+		cam.rotation = Quaternion.Lerp (cam.rotation, camObj.rotation, Time.deltaTime * followSpeed);
 	}
 }

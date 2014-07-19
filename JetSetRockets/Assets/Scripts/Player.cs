@@ -3,18 +3,23 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
-	[SerializeField] PlayerPhysics pPhysics;
-	[SerializeField] PlayerCamera pCamera;
-	[SerializeField] PlayerAnimation pAnimation;
+	public PlayerPhysics pPhysics;
+	public PlayerCamera pCamera;
+	public PlayerAnimation pAnimation;
+	public PlayerWeapon pWeapon;
 
 	void Start()
 	{
-
+		pPhysics.player = this;
+		pCamera.player = this;
+		pAnimation.player = this;
+		pWeapon.player = this;
 	}
 
 	void Update()
 	{
 		pAnimation.AnimationUpdate ();
+		//pWeapon.WeaponUpdate ();
 	}
 
 	void FixedUpdate()
