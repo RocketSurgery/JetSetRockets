@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class Player : MonoBehaviour
@@ -7,6 +8,8 @@ public class Player : MonoBehaviour
 	public PlayerCamera pCamera;
 	public PlayerAnimation pAnimation;
 	public PlayerWeapon pWeapon;
+
+	public String inputName;
 
 	void Start()
 	{
@@ -18,13 +21,12 @@ public class Player : MonoBehaviour
 
 	void Update()
 	{
-		pAnimation.AnimationUpdate ();
-		//pWeapon.WeaponUpdate ();
+		pAnimation.AnimationUpdate();
 	}
 
 	void FixedUpdate()
 	{
-		pCamera.CameraUpdate ();
-		pPhysics.PhysicsUpdate ();
+		pCamera.CameraUpdate( inputName );
+		pPhysics.PhysicsUpdate( inputName );
 	}
 }

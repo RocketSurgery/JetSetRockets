@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
-public class PlayerCamera : MonoBehaviour 
+public class PlayerCamera : MonoBehaviour
 {
 	[HideInInspector] public Player player;
 
 	[SerializeField] Transform camObj;
 	[SerializeField] Transform camTarget;
-	Transform cam;
+	[SerializeField] Transform cam;
 
 	Vector3 camOffset;
 	Vector3 currentZoom = Vector3.zero;
@@ -16,25 +17,28 @@ public class PlayerCamera : MonoBehaviour
 	[SerializeField] Vector2 lookSpeed = new Vector2(1.0f, 1.0f);
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
-		cam = Camera.main.transform;
 		camOffset = transform.position - cam.position;
 	}
 
 	// Update is called once per frame
-	public void CameraUpdate  ()
+	public void CameraUpdate( String inputName )
 	{
 		//Lock cursor
-		if(Input.GetMouseButtonDown(0))
+		if( Input.GetMouseButtonDown(0) )
+		{
 			Screen.lockCursor = true;
+		}
 
-		if(Input.GetKeyDown(KeyCode.Escape))
+		if( Input.GetKeyDown(KeyCode.Escape) )
+		{
 			Screen.lockCursor = false;
-		
-		//		//Rotate camera based on mouse move
-		camObj.RotateAround(camTarget.position, camObj.right, -Input.GetAxis("Mouse Y") * lookSpeed.y);
-		camObj.RotateAround(camTarget.position, camObj.up, Input.GetAxis("Mouse X") * lookSpeed.x);
+		}
+
+		// Rotate camera based on mouse move
+		camObj.RotateAround(camTarget.position, camObj.right, -Input.GetAxis( inputName + " Mouse Y" ) * lookSpeed.y);
+		camObj.RotateAround(camTarget.position, camObj.up, Input.GetAxis( inputName + " Mouse X" ) * lookSpeed.x);
 
 		camObj.position = camTarget.position - (cam.rotation * camOffset);
 
