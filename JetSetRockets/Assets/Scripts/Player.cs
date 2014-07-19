@@ -8,8 +8,9 @@ public class Player : MonoBehaviour
 	public PlayerCamera pCamera;
 	public PlayerAnimation pAnimation;
 	public PlayerWeapon pWeapon;
+	public PlayerGUI pGUI;
 
-	public Transform cam;
+	public Camera cam;
 	public String inputName;
 
 	void Start()
@@ -19,17 +20,17 @@ public class Player : MonoBehaviour
 		pAnimation.player = this;
 		pWeapon.player = this;
 
-		pCamera.camOffset = transform.position - cam.position;
+		pCamera.camOffset = transform.position - cam.transform.position;
 	}
 
 	void Update()
 	{
-		pAnimation.AnimationUpdate( cam );
+		pAnimation.AnimationUpdate( cam.transform );
 	}
 
 	void FixedUpdate()
 	{
-		pCamera.CameraUpdate( inputName, cam );
-		pPhysics.PhysicsUpdate( inputName, cam );
+		pCamera.CameraUpdate( inputName, cam.transform );
+		pPhysics.PhysicsUpdate( inputName, cam.transform );
 	}
 }
