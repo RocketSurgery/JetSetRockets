@@ -16,12 +16,14 @@ public class PlayerPhysics : MonoBehaviour
 	[SerializeField] int rocketJumpForce;
 
 	// Gravity
-	Vector3 downVec = Vector3.zero;
+	public Vector3 downVec = Vector3.zero;
 
 	[SerializeField] float maxGravity;
 	[SerializeField] float gravityRate;
 	float currentGravity = 0.0f;
-	float groundDist = 0.6f;
+	float groundDist = 0.75f;
+
+	bool isGrounded = false;
 
 	// Use this for initialization
 	void Start () 
@@ -33,34 +35,54 @@ public class PlayerPhysics : MonoBehaviour
 	// Update is called once per frame
 	public void PhysicsUpdate () 
 	{
-		CalculateMovement ();
-		CalculateGravity ();
+		Movement ();
+		Jump ();
+		Alignment();
+		Gravity ();
+
 		rigidbody.AddForce (moveVec + (downVec * currentGravity));
 	}
 
-	void OnCollisionEnter(Collision collision)
+	void OnCollisionStay(Collision collision)
 	{
 		CalculateDown (collision.contacts);
 	}
 
-	void CalculateMovement()
+	void Movement()
 	{
 		Vector3 inputVec = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
-		moveVec = Camera.main.transform.TransformDirection (inputVec);
+		//moveVec = Camera.main.transform.TransformDirection (inputVec.normalized);
+		moveVec = transform.TransformDirection(inputVec.normalized);
 		moveVec *= currentSpeed;
 	}
 
-	void CalculateGravity()
+	void Jump()
+	{
+		if(Input.GetButtonDown("Jump") && isGrounded)
+		{
+			currentGravity = 0.0f;
+			rigidbody.AddForce(-downVec * jumpForce);
+		}
+	}
+
+	void Alignment()
+	{
+		transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.FromToRotation (Vector3.up, -downVec), Time.deltaTime * 3);
+	}
+
+	void Gravity()
 	{
 		Ray ray = new Ray (transform.position, downVec);
 		RaycastHit hit;
 		if(Physics.Raycast(ray, out hit, groundDist))
 		{
+			isGrounded = true;
 			currentGravity = 0.0f;
 		}
 		else
 		{
+			isGrounded = false;
 			currentGravity += gravityRate;
 		}
 
@@ -76,6 +98,6 @@ public class PlayerPhysics : MonoBehaviour
 		{
 			downVec -= contactPoints[counter].normal;
 		}
-		downVec = downVec * 1/counter;
+		downVec = (downVec * 1/counter).normalized;
 	}
 }
