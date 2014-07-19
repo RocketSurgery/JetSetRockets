@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
 	public PlayerAnimation pAnimation;
 	public PlayerWeapon pWeapon;
 
+	public Transform cam;
 	public String inputName;
 
 	void Start()
@@ -17,16 +18,18 @@ public class Player : MonoBehaviour
 		pCamera.player = this;
 		pAnimation.player = this;
 		pWeapon.player = this;
+
+		pCamera.camOffset = transform.position - cam.position;
 	}
 
 	void Update()
 	{
-		pAnimation.AnimationUpdate();
+		pAnimation.AnimationUpdate( cam );
 	}
 
 	void FixedUpdate()
 	{
-		pCamera.CameraUpdate( inputName );
-		pPhysics.PhysicsUpdate( inputName );
+		pCamera.CameraUpdate( inputName, cam );
+		pPhysics.PhysicsUpdate( inputName, cam );
 	}
 }

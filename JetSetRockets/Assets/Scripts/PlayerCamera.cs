@@ -8,22 +8,15 @@ public class PlayerCamera : MonoBehaviour
 
 	[SerializeField] Transform camObj;
 	[SerializeField] Transform camTarget;
-	[SerializeField] Transform cam;
 
-	Vector3 camOffset;
+	public Vector3 camOffset;
 	Vector3 currentZoom = Vector3.zero;
 
 	[SerializeField] float followSpeed = 7.0f;
 	[SerializeField] Vector2 lookSpeed = new Vector2(1.0f, 1.0f);
 
-	// Use this for initialization
-	void Start ()
-	{
-		camOffset = transform.position - cam.position;
-	}
-
 	// Update is called once per frame
-	public void CameraUpdate( String inputName )
+	public void CameraUpdate( String inputName, Transform cam )
 	{
 		//Lock cursor
 		if( Input.GetMouseButtonDown(0) )

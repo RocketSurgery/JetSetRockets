@@ -6,8 +6,6 @@ public class PlayerPhysics : MonoBehaviour
 {
 	[HideInInspector] public Player player;
 
-	[SerializeField] Transform cam;
-
 	// Movement
 	[SerializeField] int defaultMaxSpeed;
 	int currentMaxSpeed;
@@ -54,14 +52,14 @@ public class PlayerPhysics : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	public void PhysicsUpdate( String inputName )
+	public void PhysicsUpdate( String inputName, Transform cam )
 	{
 		Jump();
 		CalculateDown();
 		Alignment();
 
 		Gravity();
-		Movement( inputName );
+		Movement( inputName, cam );
 
 		rigidbody.AddForce(moveVec + (downVec * currentGravity));
 		Stop();
@@ -72,7 +70,7 @@ public class PlayerPhysics : MonoBehaviour
 		lastContactPoints = collision.contacts;
 	}
 
-	void Movement( String inputName )
+	void Movement( String inputName, Transform cam )
 	{
 		inputVec = new Vector3(Input.GetAxis( inputName + " Horizontal"), 0, Input.GetAxis( inputName + " Vertical" ));
 
