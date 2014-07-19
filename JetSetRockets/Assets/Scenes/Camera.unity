@@ -232,10 +232,10 @@ GameObject:
   - 33: {fileID: 2066724148}
   - 136: {fileID: 2066724147}
   - 23: {fileID: 2066724146}
+  - 54: {fileID: 2066724152}
+  - 114: {fileID: 2066724153}
   - 114: {fileID: 2066724151}
   - 114: {fileID: 2066724150}
-  - 114: {fileID: 2066724145}
-  - 54: {fileID: 2066724152}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -243,20 +243,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2066724145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2066724144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9f475f29f3fbfe439bf2cd5a22b7415, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseMoveSpeed: 10
-  orbitSpeed: 500
-  orbitDistance: 10
 --- !u!23 &2066724146
 Renderer:
   m_ObjectHideFlags: 0
@@ -319,14 +305,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2066724144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65e1928bc8bea43458dfa65ef0beba72, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f475f29f3fbfe439bf2cd5a22b7415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultMaxSpeed: 0
-  jumpForce: 0
-  rocketJumpForce: 0
-  maxGravity: 0
-  gravityRate: 0
+  baseMoveSpeed: 10
+  orbitSpeed: 500
+  orbitDistance: 10
 --- !u!114 &2066724151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,10 +319,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2066724144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e18f6998ebb24d2390f78ae4fbe5bda, type: 3}
+  m_Script: {fileID: 11500000, guid: 65e1928bc8bea43458dfa65ef0beba72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pPhysics: {fileID: 2066724150}
+  defaultMaxSpeed: 0
+  jumpForce: 0
+  rocketJumpForce: 0
+  downVec: {x: 0, y: 0, z: 0}
+  maxGravity: 0
+  gravityRate: 0
 --- !u!54 &2066724152
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -354,6 +343,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2066724153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2066724144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e18f6998ebb24d2390f78ae4fbe5bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pPhysics: {fileID: 2066724151}
+  pCamera: {fileID: 2066724150}
+  pAnimation: {fileID: 0}
 --- !u!1 &2084949709
 GameObject:
   m_ObjectHideFlags: 0
