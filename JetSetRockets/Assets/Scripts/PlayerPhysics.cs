@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerPhysics : MonoBehaviour 
 {
+	[HideInInspector] public Player player;
+
 	// Movement
 	[SerializeField] int defaultMaxSpeed;
 	int currentMaxSpeed;
