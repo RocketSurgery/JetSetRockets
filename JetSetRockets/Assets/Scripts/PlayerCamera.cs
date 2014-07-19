@@ -4,6 +4,8 @@ using System.Collections;
 
 public class PlayerCamera : MonoBehaviour
 {
+	[HideInInspector] public Player player;
+
 	[SerializeField] Transform camObj;
 	[SerializeField] Transform camTarget;
 	[SerializeField] Transform cam;
@@ -24,16 +26,21 @@ public class PlayerCamera : MonoBehaviour
 	public void CameraUpdate( String inputName )
 	{
 		//Lock cursor
-		if( Input.GetMouseButtonDown( 0 ) )
+		if( Input.GetMouseButtonDown(0) )
 		{
-			Screen.lockCursor = !Screen.lockCursor;
+			Screen.lockCursor = true;
+		}
+
+		if( Input.GetKeyDown(KeyCode.Escape) )
+		{
+			Screen.lockCursor = false;
 		}
 
 		// Rotate camera based on mouse move
 		camObj.RotateAround(camTarget.position, camObj.right, -Input.GetAxis( inputName + " Mouse Y" ) * lookSpeed.y);
 		camObj.RotateAround(camTarget.position, camObj.up, Input.GetAxis( inputName + " Mouse X" ) * lookSpeed.x);
 
-		camObj.position = Vector3.Lerp (camObj.position, camTarget.position - (cam.rotation * camOffset), Time.deltaTime * followSpeed);
+		camObj.position = camTarget.position - (cam.rotation * camOffset);
 
 		Vector3 localEuler = camObj.localEulerAngles;
 		localEuler.z = 0;

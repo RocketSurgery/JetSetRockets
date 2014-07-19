@@ -4,6 +4,8 @@ using System.Collections;
 
 public class PlayerPhysics : MonoBehaviour
 {
+	[HideInInspector] public Player player;
+
 	[SerializeField] Transform cam;
 
 	// Movement

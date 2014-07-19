@@ -4,14 +4,19 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
-	[SerializeField] PlayerPhysics pPhysics;
-	[SerializeField] PlayerCamera pCamera;
-	[SerializeField] PlayerAnimation pAnimation;
-	[SerializeField] String inputName;
+	public PlayerPhysics pPhysics;
+	public PlayerCamera pCamera;
+	public PlayerAnimation pAnimation;
+	public PlayerWeapon pWeapon;
+
+	public String inputName;
 
 	void Start()
 	{
-
+		pPhysics.player = this;
+		pCamera.player = this;
+		pAnimation.player = this;
+		pWeapon.player = this;
 	}
 
 	void Update()
