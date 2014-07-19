@@ -24,7 +24,12 @@ public class PlayerPhysics : MonoBehaviour
 	[SerializeField] float maxGravity;
 	[SerializeField] float gravityRate;
 	float currentGravity = 0.0f;
-	float groundDist = 0.7f;
+	float jumpHitDist = 0.7f;
+
+	// Alignment
+	[SerializeField] float airAlignTime = 1.0f;
+	float airAlignTimer = 0.0f;
+	float alignHitDist = 2.5f;
 
 	ContactPoint[] lastContactPoints = new ContactPoint[0];
 
@@ -109,7 +114,7 @@ public class PlayerPhysics : MonoBehaviour
 	{
 		Ray ray = new Ray (transform.position, downVec);
 		RaycastHit hit;
-		if(Physics.Raycast(ray, out hit, groundDist))
+		if(Physics.Raycast(ray, out hit, jumpHitDist))
 		{
 			isGrounded = true;
 			currentGravity = 0.0f;
@@ -130,13 +135,31 @@ public class PlayerPhysics : MonoBehaviour
 	void CalculateDown()
 	{
 		if(lastContactPoints.Length < 1)
-			return;
-
-		int counter;
-		for(counter = 0; counter < lastContactPoints.Length; counter++)
 		{
-			downVec -= lastContactPoints[counter].normal;
+			// Mid air align
+			if(airAlignTimer < airAlignTime)
+			{
+				Ray ray = new Ray (transform.position, -transform.up);
+				RaycastHit hit;
+				if(Physics.Raycast(ray, out hit, alignHitDist))
+				{
+					downVec = -hit.normal;
+					airAlignTimer = Mathf.Infinity;
+				}
+			}
+
+			airAlignTimer += Time.deltaTime;
 		}
-		downVec = (downVec * 1/counter).normalized;
+		else
+		{
+			// Ground align
+			int counter;
+			for(counter = 0; counter < lastContactPoints.Length; counter++)
+			{
+				downVec -= lastContactPoints[counter].normal;
+			}
+			downVec = (downVec * 1/counter).normalized;
+			airAlignTimer = 0.0f;
+		}
 	}
 }
