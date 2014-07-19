@@ -7,18 +7,32 @@ public class PlayerGUI : MonoBehaviour {
 
 	void OnGUI()
 	{
-		Vector3 origin = cam.ViewportToScreenPoint( new Vector3( 0f, 0f, 0f ) );
+		GUI.Box( new Rect( cam.rect.x * Screen.width, (1 - cam.rect.height - cam.rect.y) * Screen.height, 10, 10 ), "origin" );
+		GUI.Box( new Rect( Screen.width - 10, (1 - cam.rect.y) * Screen.height - 10, 10, 10), "end" );
+
+
+		GUILayout.BeginArea( new Rect(	cam.rect.x * Screen.width,
+										(1 - cam.rect.height - cam.rect.y) * Screen.height,
+										cam.rect.width * Screen.width,
+										(1 - cam.rect.y) * Screen.height ) );
 
 		// Make a background box
-		GUI.Box( new Rect( origin.x + 10, origin.y + 10, 100, 90 ), "Loader Menu" );
+		GUILayout.Box( "GUI" );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
+		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
 
-		if( GUI.Button( new Rect( origin.x + 20, origin.y + 40, 80, 20 ), "Level 1" ) )
-		{
-		}
-
-		// Make the second button.
-		if( GUI.Button( new Rect( origin.x + 20, origin.y + 70, 80, 20 ), "Level 2" ) )
-		{
-		}
+		GUILayout.EndArea();
 	}
 }

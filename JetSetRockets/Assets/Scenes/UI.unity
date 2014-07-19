@@ -1335,7 +1335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &240636203
 Transform:
   m_ObjectHideFlags: 0
@@ -2477,7 +2477,7 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: .5
+    y: 0
     width: 1
     height: .5
   near clip plane: .300000012
@@ -6759,11 +6759,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
       propertyPath: m_NormalizedViewPortRect.y
-      value: .5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
       propertyPath: m_NormalizedViewPortRect.height
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100212, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
@@ -7746,6 +7750,14 @@ Prefab:
     - target: {fileID: 2000000, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
       propertyPath: m_NormalizedViewPortRect.height
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100212, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
