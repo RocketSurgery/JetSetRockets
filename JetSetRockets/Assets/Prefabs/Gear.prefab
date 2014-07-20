@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: Gear
   m_TagString: Untagged
@@ -24,8 +25,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.24520874e-06, y: .466000557, z: -5.23057079}
-  m_LocalScale: {x: 1.05999994, y: 1.05999994, z: 1.05999994}
+  m_LocalPosition: {x: .389072388, y: 1.28351235, z: 2.6587882}
+  m_LocalScale: {x: .256802201, y: .256802201, z: .256802201}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,6 +57,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mesh: {fileID: 4300002, guid: 71c7382bb031a4b0f8c29971d68ac8d4, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e672f61a0b04f014395f86c2956b7ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeedRange: {x: 350, y: 1000}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
