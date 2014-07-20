@@ -24,12 +24,13 @@ public class Player : MonoBehaviour
 
 	void Update()
 	{
-		pAnimation.AnimationUpdate( cam );
+		pWeapon.WeaponUpdate (inputName, cam);
 	}
 
 	void FixedUpdate()
 	{
 		pCamera.CameraUpdate( inputName, cam );
 		pPhysics.PhysicsUpdate( inputName, cam );
+		pAnimation.AnimationUpdate( cam );
 	}
 }

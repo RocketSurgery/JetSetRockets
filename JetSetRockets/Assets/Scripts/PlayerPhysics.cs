@@ -67,7 +67,11 @@ public class PlayerPhysics : MonoBehaviour
 
 	void OnCollisionStay(Collision collision)
 	{
-		lastContactPoints = collision.contacts;
+		string tag = collision.transform.tag;
+		if(tag != "Player" && tag != "Rocket")
+		{
+			lastContactPoints = collision.contacts;
+		}
 	}
 
 	void Movement( String inputName, Transform cam )
@@ -147,7 +151,7 @@ public class PlayerPhysics : MonoBehaviour
 				if(Physics.Raycast(ray, out hit, alignHitDist))
 				{
 					downVec = -hit.normal;
-					airAlignTimer = Mathf.Infinity;
+					airAlignTimer = 10000;
 				}
 			}
 
@@ -164,5 +168,10 @@ public class PlayerPhysics : MonoBehaviour
 			downVec = (downVec * 1/counter).normalized;
 			airAlignTimer = 0.0f;
 		}
+	}
+
+	public void RocketHit(float hitDamage)
+	{
+		// lower current max speed for a short time
 	}
 }
