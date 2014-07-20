@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: RobotBody
-  m_Shader: {fileID: 10, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: RobotMetal
+  m_Shader: {fileID: 12, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -16,13 +16,6 @@ Material:
       data:
         first:
           name: _MainTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 1f0833d3cc04b4c69b056be238252877, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _ToonShade
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -38,11 +31,7 @@ Material:
       data:
         first:
           name: _Shininess
-        second: .0488910079
-      data:
-        first:
-          name: _Outline
-        second: .00499999989
+        second: .319140941
       data:
         first:
           name: _EmissionLM
@@ -51,12 +40,8 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .852941155, g: .852941155, b: .852941155, a: 1}
+        second: {r: .279411793, g: .279411793, b: .279411793, a: 1}
       data:
         first:
           name: _SpecColor
-        second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _OutlineColor
-        second: {r: 0, g: 0, b: 0, a: 1}
+        second: {r: .926470578, g: .926470578, b: .926470578, a: 1}
