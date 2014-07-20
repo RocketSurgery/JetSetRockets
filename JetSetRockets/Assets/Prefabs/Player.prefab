@@ -3368,7 +3368,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.09203005, y: .499990433, z: -4.33606577}
+  m_LocalPosition: {x: -1.7967726, y: 1, z: -11.169405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400208}
@@ -3938,7 +3938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   defaultMaxSpeed: 50
-  stoppingTime: .5
+  stopTime: .5
   jumpForce: 300
   rocketJumpForce: 150
   downVec: {x: 0, y: 0, z: 0}
@@ -3962,7 +3962,7 @@ MonoBehaviour:
   pCamera: {fileID: 11400006}
   pAnimation: {fileID: 11400008}
   pWeapon: {fileID: 11400000}
-  pGUI: {fileID: 0}
+  pGUI: {fileID: 11400010}
   cam: {fileID: 2000000}
   inputName: P1
 --- !u!114 &11400006
@@ -4009,9 +4009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1761cbea7249d7348885ff259778dd7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
   score: 0
-  physics: {fileID: 0}
+  player: {fileID: 0}
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
