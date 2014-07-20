@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Rocket : MonoBehaviour 
+public class Rocket : MonoBehaviour
 {
 	Player player;
 	Vector3 velocity;
@@ -24,7 +24,7 @@ public class Rocket : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	void Update () 
+	void Update ()
 	{
 		if(!rigidbody.isKinematic)
 			rigidbody.velocity = velocity;
@@ -36,9 +36,9 @@ public class Rocket : MonoBehaviour
 
 		if(playerHit == player)
 			return;
-	
+
 		Transform tHit = collision.transform;
-	
+
 		foreach(ContactPoint cp in collision.contacts)
 		{
 			hitPoint += cp.point;
@@ -62,7 +62,8 @@ public class Rocket : MonoBehaviour
 				tHit.GetComponent<PlayerPhysics>().RocketHit(hitDamage);
 				break;
 			case "Ratchet":
-				//tHit.GetComponent<Ratchet>().RocketHit(hitDamage);
+				Debug.Log("I hit a ratchet!");
+				tHit.GetComponent<Ratchet>().RocketHit(hitDamage);
 				break;
 			case "RatchetHive":
 				//tHit.GetComponent<RatchetHive>().RocketHit(hitDamage);
