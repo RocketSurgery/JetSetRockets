@@ -1,14 +1,8 @@
 fileFormatVersion: 2
-guid: 86621793cd0e1479b8a9da212413c225
+guid: 82ee242d071ad46a2a7b79dae0e0211a
 ModelImporter:
   serializedVersion: 16
-  fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: FortyFivePipe
-    9500000: //RootNode
+  fileIDToRecycleName: {}
   materials:
     importMaterials: 1
     materialName: 0

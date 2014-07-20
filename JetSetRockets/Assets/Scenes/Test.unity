@@ -1064,7 +1064,6 @@ GameObject:
   - 20: {fileID: 606565389}
   - 92: {fileID: 606565388}
   - 124: {fileID: 606565387}
-  - 81: {fileID: 606565386}
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: MainCamera
@@ -1072,14 +1071,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &606565386
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8100000, guid: 3fbdfe1a3f85d4067a861358b635b115,
-    type: 2}
-  m_PrefabInternal: {fileID: 373901773}
-  m_GameObject: {fileID: 606565385}
-  m_Enabled: 1
 --- !u!124 &606565387
 Behaviour:
   m_ObjectHideFlags: 0
@@ -4374,7 +4365,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  cam: {fileID: 606565390}
   defaultMaxSpeed: 50
   stoppingTime: .5
   jumpForce: 300
@@ -4401,6 +4391,7 @@ MonoBehaviour:
   pCamera: {fileID: 2083624702}
   pAnimation: {fileID: 2083624703}
   pWeapon: {fileID: 2083624704}
+  cam: {fileID: 606565390}
   inputName: P1
 --- !u!4 &2083624700
 Transform:
@@ -4450,7 +4441,7 @@ MonoBehaviour:
   player: {fileID: 0}
   camObj: {fileID: 872234190}
   camTarget: {fileID: 2080853903}
-  cam: {fileID: 606565390}
+  camOffset: {x: 0, y: 0, z: 0}
   followSpeed: 25
   lookSpeed: {x: 3, y: 2}
 --- !u!114 &2083624703

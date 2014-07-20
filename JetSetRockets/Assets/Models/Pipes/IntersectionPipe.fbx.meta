@@ -1,23 +1,23 @@
 fileFormatVersion: 2
-guid: 09a77fee8a1d14ba3bdf6421656d634c
+guid: 023f383b0c1c64fc39eb7833bf38ed46
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: Pipe1Long8
-    100002: pPipe6
-    100004: //RootNode
-    100006: SplitterPipe
-    100008: transform3
-    100010: transform4
-    400000: Pipe1Long8
-    400002: pPipe6
-    400004: //RootNode
-    400006: SplitterPipe
-    400008: transform3
-    400010: transform4
-    2300000: SplitterPipe
-    3300000: SplitterPipe
-    4300000: SplitterPipe
+    100000: //RootNode
+    100002: IntersectionPipe
+    100004: Pipe1Long10
+    100006: Pipe1Long9
+    100008: transform5
+    100010: transform6
+    400000: //RootNode
+    400002: IntersectionPipe
+    400004: Pipe1Long10
+    400006: Pipe1Long9
+    400008: transform5
+    400010: transform6
+    2300000: IntersectionPipe
+    3300000: IntersectionPipe
+    4300000: IntersectionPipe
     9500000: //RootNode
   materials:
     importMaterials: 1

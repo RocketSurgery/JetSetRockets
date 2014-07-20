@@ -8,7 +8,7 @@ public class PlayerAnimation : MonoBehaviour
 	[SerializeField] Transform model;
 	[SerializeField] int orientSpeed;
 
-	[SerializeField] Transform weapon;
+	public Transform weapon;
 	[SerializeField] int weaponLookSpeed;
 
 	Vector3 lastVelocity = Vector3.zero;
