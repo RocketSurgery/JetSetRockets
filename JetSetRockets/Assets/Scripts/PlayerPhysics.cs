@@ -11,6 +11,14 @@ public class PlayerPhysics : MonoBehaviour
 	int currentMaxSpeed;
 	float currentSpeed;
 
+	public int MaxSpeed
+	{
+		get
+		{
+			return defaultMaxSpeed;
+		}
+	}
+
 	float stopStrength = 0.0f;
 	[SerializeField] float stoppingTime = 0.5f;
 
