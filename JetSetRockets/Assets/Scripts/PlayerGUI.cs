@@ -24,8 +24,10 @@ public class PlayerGUI : MonoBehaviour {
 		GUILayout.Box( "" );
 		GUILayout.EndArea();
 
+		GUILayout.BeginArea( new Rect( 10, 10, Screen.width * cam.rect.width - 10, Screen.height * cam.rect.height - 10 ) );
 		GUILayout.Label( "Speed: " + (int)rigidbody.velocity.magnitude );
 		GUILayout.Label( "Score: " + score );
+		GUILayout.EndArea();
 
 		GUILayout.EndArea();
 	}
