@@ -62,7 +62,6 @@ public class Rocket : MonoBehaviour
 				tHit.GetComponent<PlayerPhysics>().RocketHit(hitDamage);
 				break;
 			case "Ratchet":
-				Debug.Log("I hit a ratchet!");
 				tHit.GetComponent<Ratchet>().RocketHit(hitDamage);
 				break;
 			case "RatchetHive":
