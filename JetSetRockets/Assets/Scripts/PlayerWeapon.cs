@@ -39,6 +39,11 @@ public class PlayerWeapon : MonoBehaviour
 		float hitRadius = 5;
 		rocket.GetComponent<Rocket> ().Setup (player, rocket.transform.forward * rocketSpeed + rigidbody.velocity, hitRadius);
 
+		if(player.pAnimation.mecanim.GetBool("isGrounded"))
+			player.pAnimation.mecanim.Play("Fire");
+		else
+			player.pAnimation.mecanim.Play("JumpFire");
+
 		// Play rocket sound
 
 	}

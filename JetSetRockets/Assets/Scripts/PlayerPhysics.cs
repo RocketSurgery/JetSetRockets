@@ -51,8 +51,6 @@ public class PlayerPhysics : MonoBehaviour
 	[SerializeField] float lateJumpTime = 0.0f;
 	float lateJumpTimer = 0.0f;
 
-	bool isGrounded = false;
-
 	// Use this for initialization
 	void Start ()
 	{
@@ -101,18 +99,17 @@ public class PlayerPhysics : MonoBehaviour
 
 	void Stop()
 	{
-		if(Math.Abs(inputVec.magnitude) < WadeUtils.SMALLNUM && isGrounded)
+		if(Math.Abs(inputVec.magnitude) < WadeUtils.SMALLNUM && player.pAnimation.mecanim.GetBool("isGrounded"))
 		{
+			player.pAnimation.mecanim.SetBool("isMoving", false);
+
 			stopStrength = Mathf.Lerp(1.0f, 0.0f, stopTimer/stopTime);
 			stopStrength = Mathf.Clamp(stopStrength, 0.0f, 1.0f);
-
-			//Mathf.SmoothDamp(0.0f, 1.0f, ref stopStrength, stoppingTime);
 
 			Vector3 adjustedVel = rigidbody.velocity - Vector3.Project (rigidbody.velocity, -downVec);
 
 			rigidbody.velocity -= adjustedVel;
 			rigidbody.velocity += adjustedVel * stopStrength;
-			//rigidbody.AddForce(negForce, ForceMode.VelocityChange);
 
 			if(stopTimer < stopTime)
 			{
@@ -121,6 +118,7 @@ public class PlayerPhysics : MonoBehaviour
 		}
 		else
 		{
+			player.pAnimation.mecanim.SetBool("isMoving", true);
 			stopTimer = 0.0f;
 			stopStrength = 1.0f;
 		}
@@ -128,8 +126,9 @@ public class PlayerPhysics : MonoBehaviour
 
 	void Jump()
 	{
-		if(isGrounded && Input.GetButtonDown("Jump") && jumpTimer > jumpTime)
+		if(player.pAnimation.mecanim.GetBool("isGrounded") && Input.GetButtonDown("Jump") && jumpTimer > jumpTime)
 		{
+			player.pAnimation.mecanim.Play ("Jump");
 			currentGravity = 0.0f;
 			rigidbody.AddForce(-downVec * jumpForce);
 			jumpTimer = 0.0f;
@@ -149,7 +148,7 @@ public class PlayerPhysics : MonoBehaviour
 		RaycastHit hit;
 		if(Physics.Raycast(ray, out hit, jumpHitDist))
 		{
-			isGrounded = true;
+			player.pAnimation.mecanim.SetBool("isGrounded", true);
 			currentGravity = 0.0f;
 
 			if(jumpTimer > jumpTime)
@@ -157,7 +156,7 @@ public class PlayerPhysics : MonoBehaviour
 		}
 		else if(lateJumpTimer > lateJumpTime)
 		{
-			isGrounded = false;
+			player.pAnimation.mecanim.SetBool("isGrounded", false);
 			currentGravity += gravityRate;
 		}
 

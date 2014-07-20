@@ -1,0 +1,2852 @@
+fileFormatVersion: 2
+guid: 93f7adaac443140e4afcb9c32278d8f2
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Body
+    100002: Chest
+    100004: DOop
+    100006: EngineHead
+    100008: EyeLid
+    100010: Finger1
+    100012: Finger2
+    100014: Finger3
+    100016: Finger4
+    100018: Finger5
+    100020: Finger6
+    100022: Gear1
+    100024: Gear2
+    100026: Gear3
+    100028: HeadLight1
+    100030: HeadLight2
+    100032: HeadLight3
+    100034: L_Ankle
+    100036: L_Clavicle
+    100038: L_Elbow
+    100040: L_Fingers
+    100042: L_Fingertips
+    100044: L_Foot
+    100046: L_Hip
+    100048: L_Knee
+    100050: L_Shoulder
+    100052: L_Thigh
+    100054: L_Toes
+    100056: L_Wrist
+    100058: Neck
+    100060: PistonBottom10
+    100062: PistonBottom11
+    100064: PistonBottom6
+    100066: PistonBottom7
+    100068: PistonBottom8
+    100070: PistonBottom9
+    100072: PistonTop10
+    100074: PistonTop11
+    100076: PistonTop6
+    100078: PistonTop7
+    100080: PistonTop8
+    100082: PistonTop9
+    100084: polySurface1
+    100086: polySurface10
+    100088: polySurface11
+    100090: polySurface12
+    100092: polySurface13
+    100094: polySurface14
+    100096: polySurface15
+    100098: polySurface16
+    100100: polySurface17
+    100102: polySurface18
+    100104: polySurface19
+    100106: polySurface2
+    100108: polySurface20
+    100110: polySurface24
+    100112: polySurface25
+    100114: polySurface26
+    100116: polySurface27
+    100118: polySurface28
+    100120: polySurface29
+    100122: polySurface29 1
+    100124: polySurface3
+    100126: polySurface30
+    100128: polySurface31
+    100130: polySurface32
+    100132: polySurface33
+    100134: polySurface34
+    100136: polySurface35
+    100138: polySurface36
+    100140: polySurface37
+    100142: polySurface38
+    100144: polySurface39
+    100146: polySurface4
+    100148: polySurface40
+    100150: polySurface41
+    100152: polySurface42
+    100154: polySurface43
+    100156: polySurface44
+    100158: polySurface46
+    100160: polySurface47
+    100162: polySurface48
+    100164: polySurface49
+    100166: polySurface5
+    100168: polySurface6
+    100170: polySurface7
+    100172: polySurface8
+    100174: polySurface9
+    100176: R_Ankle
+    100178: R_Clavicle
+    100180: R_Elbow
+    100182: R_Fingers
+    100184: R_Fingertips
+    100186: R_Foot
+    100188: R_Hip
+    100190: R_Knee
+    100192: R_Shoulder
+    100194: R_Thigh
+    100196: R_Toes
+    100198: R_Wrist
+    100200: robot
+    100202: RobotPalm
+    100204: RobotPalm1
+    100206: //RootNode
+    100208: Root
+    100210: Sternum
+    100212: Thumb1
+    100214: Thumb2
+    100216: transform10
+    100218: transform11
+    100220: transform12
+    100222: transform13
+    100224: transform14
+    100226: transform15
+    100228: transform16
+    100230: transform17
+    100232: transform18
+    100234: transform19
+    100236: transform20
+    100238: transform21
+    100240: transform22
+    100242: transform23
+    100244: transform24
+    100246: transform25
+    100248: transform26
+    100250: transform27
+    100252: transform28
+    100254: transform29
+    100256: transform30
+    100258: transform31
+    100260: transform32
+    100262: transform33
+    100264: transform34
+    100266: transform35
+    100268: transform36
+    100270: transform37
+    100272: transform38
+    100274: transform39
+    100276: transform40
+    100278: transform41
+    100280: transform42
+    100282: transform43
+    100284: transform44
+    100286: transform45
+    100288: transform46
+    100290: transform47
+    100292: transform48
+    100294: transform49
+    100296: transform5
+    100298: transform50
+    100300: transform51
+    100302: transform52
+    100304: transform53
+    100306: transform54
+    100308: transform55
+    100310: transform6
+    100312: transform7
+    100314: transform8
+    100316: transform9
+    100318: Waist
+    100320: Wheel1
+    100322: Wheel2
+    100324: Wheel3
+    100326: Wheel4
+    100328: Wheel5
+    100330: Wheel6
+    100332: Wheel7
+    100334: Wheel8
+    100336: WheelMount
+    100338: WheelMount1
+    100340: WireHead1
+    100342: WireHead2
+    100344: WireHead3
+    400000: Body
+    400002: Chest
+    400004: DOop
+    400006: EngineHead
+    400008: EyeLid
+    400010: Finger1
+    400012: Finger2
+    400014: Finger3
+    400016: Finger4
+    400018: Finger5
+    400020: Finger6
+    400022: Gear1
+    400024: Gear2
+    400026: Gear3
+    400028: HeadLight1
+    400030: HeadLight2
+    400032: HeadLight3
+    400034: L_Ankle
+    400036: L_Clavicle
+    400038: L_Elbow
+    400040: L_Fingers
+    400042: L_Fingertips
+    400044: L_Foot
+    400046: L_Hip
+    400048: L_Knee
+    400050: L_Shoulder
+    400052: L_Thigh
+    400054: L_Toes
+    400056: L_Wrist
+    400058: Neck
+    400060: PistonBottom10
+    400062: PistonBottom11
+    400064: PistonBottom6
+    400066: PistonBottom7
+    400068: PistonBottom8
+    400070: PistonBottom9
+    400072: PistonTop10
+    400074: PistonTop11
+    400076: PistonTop6
+    400078: PistonTop7
+    400080: PistonTop8
+    400082: PistonTop9
+    400084: polySurface1
+    400086: polySurface10
+    400088: polySurface11
+    400090: polySurface12
+    400092: polySurface13
+    400094: polySurface14
+    400096: polySurface15
+    400098: polySurface16
+    400100: polySurface17
+    400102: polySurface18
+    400104: polySurface19
+    400106: polySurface2
+    400108: polySurface20
+    400110: polySurface24
+    400112: polySurface25
+    400114: polySurface26
+    400116: polySurface27
+    400118: polySurface28
+    400120: polySurface29
+    400122: polySurface29 1
+    400124: polySurface3
+    400126: polySurface30
+    400128: polySurface31
+    400130: polySurface32
+    400132: polySurface33
+    400134: polySurface34
+    400136: polySurface35
+    400138: polySurface36
+    400140: polySurface37
+    400142: polySurface38
+    400144: polySurface39
+    400146: polySurface4
+    400148: polySurface40
+    400150: polySurface41
+    400152: polySurface42
+    400154: polySurface43
+    400156: polySurface44
+    400158: polySurface46
+    400160: polySurface47
+    400162: polySurface48
+    400164: polySurface49
+    400166: polySurface5
+    400168: polySurface6
+    400170: polySurface7
+    400172: polySurface8
+    400174: polySurface9
+    400176: R_Ankle
+    400178: R_Clavicle
+    400180: R_Elbow
+    400182: R_Fingers
+    400184: R_Fingertips
+    400186: R_Foot
+    400188: R_Hip
+    400190: R_Knee
+    400192: R_Shoulder
+    400194: R_Thigh
+    400196: R_Toes
+    400198: R_Wrist
+    400200: robot
+    400202: RobotPalm
+    400204: RobotPalm1
+    400206: //RootNode
+    400208: Root
+    400210: Sternum
+    400212: Thumb1
+    400214: Thumb2
+    400216: transform10
+    400218: transform11
+    400220: transform12
+    400222: transform13
+    400224: transform14
+    400226: transform15
+    400228: transform16
+    400230: transform17
+    400232: transform18
+    400234: transform19
+    400236: transform20
+    400238: transform21
+    400240: transform22
+    400242: transform23
+    400244: transform24
+    400246: transform25
+    400248: transform26
+    400250: transform27
+    400252: transform28
+    400254: transform29
+    400256: transform30
+    400258: transform31
+    400260: transform32
+    400262: transform33
+    400264: transform34
+    400266: transform35
+    400268: transform36
+    400270: transform37
+    400272: transform38
+    400274: transform39
+    400276: transform40
+    400278: transform41
+    400280: transform42
+    400282: transform43
+    400284: transform44
+    400286: transform45
+    400288: transform46
+    400290: transform47
+    400292: transform48
+    400294: transform49
+    400296: transform5
+    400298: transform50
+    400300: transform51
+    400302: transform52
+    400304: transform53
+    400306: transform54
+    400308: transform55
+    400310: transform6
+    400312: transform7
+    400314: transform8
+    400316: transform9
+    400318: Waist
+    400320: Wheel1
+    400322: Wheel2
+    400324: Wheel3
+    400326: Wheel4
+    400328: Wheel5
+    400330: Wheel6
+    400332: Wheel7
+    400334: Wheel8
+    400336: WheelMount
+    400338: WheelMount1
+    400340: WireHead1
+    400342: WireHead2
+    400344: WireHead3
+    2300000: polySurface1
+    2300002: polySurface10
+    2300004: polySurface11
+    2300006: polySurface12
+    2300008: polySurface13
+    2300010: polySurface14
+    2300012: polySurface15
+    2300014: polySurface16
+    2300016: polySurface17
+    2300018: polySurface18
+    2300020: polySurface19
+    2300022: polySurface2
+    2300024: polySurface20
+    2300026: polySurface24
+    2300028: polySurface25
+    2300030: polySurface26
+    2300032: polySurface27
+    2300034: polySurface28
+    2300036: polySurface3
+    2300038: polySurface34
+    2300040: polySurface35
+    2300042: polySurface36
+    2300044: polySurface37
+    2300046: polySurface38
+    2300048: polySurface39
+    2300050: polySurface4
+    2300052: polySurface40
+    2300054: polySurface41
+    2300056: polySurface42
+    2300058: polySurface43
+    2300060: polySurface44
+    2300062: polySurface46
+    2300064: polySurface47
+    2300066: polySurface48
+    2300068: polySurface49
+    2300070: polySurface5
+    2300072: polySurface6
+    2300074: polySurface7
+    2300076: polySurface8
+    2300078: polySurface9
+    3300000: polySurface1
+    3300002: polySurface10
+    3300004: polySurface11
+    3300006: polySurface12
+    3300008: polySurface13
+    3300010: polySurface14
+    3300012: polySurface15
+    3300014: polySurface16
+    3300016: polySurface17
+    3300018: polySurface18
+    3300020: polySurface19
+    3300022: polySurface2
+    3300024: polySurface20
+    3300026: polySurface24
+    3300028: polySurface25
+    3300030: polySurface26
+    3300032: polySurface27
+    3300034: polySurface28
+    3300036: polySurface3
+    3300038: polySurface34
+    3300040: polySurface35
+    3300042: polySurface36
+    3300044: polySurface37
+    3300046: polySurface38
+    3300048: polySurface39
+    3300050: polySurface4
+    3300052: polySurface40
+    3300054: polySurface41
+    3300056: polySurface42
+    3300058: polySurface43
+    3300060: polySurface44
+    3300062: polySurface46
+    3300064: polySurface47
+    3300066: polySurface48
+    3300068: polySurface49
+    3300070: polySurface5
+    3300072: polySurface6
+    3300074: polySurface7
+    3300076: polySurface8
+    3300078: polySurface9
+    4300000: EngineHead
+    4300002: EyeLid
+    4300004: HeadLight1
+    4300006: HeadLight2
+    4300008: HeadLight3
+    4300010: PistonBottom6
+    4300012: PistonTop6
+    4300014: PistonBottom8
+    4300016: PistonTop8
+    4300018: PistonTop7
+    4300020: PistonBottom7
+    4300022: Gear3
+    4300024: Gear2
+    4300026: Gear1
+    4300028: PistonBottom10
+    4300030: PistonTop10
+    4300032: PistonTop11
+    4300034: PistonBottom11
+    4300036: PistonBottom9
+    4300038: PistonTop9
+    4300040: WireHead1
+    4300042: WireHead3
+    4300044: WireHead2
+    4300046: WheelMount1
+    4300048: Wheel4
+    4300050: Wheel3
+    4300052: Wheel2
+    4300054: Wheel1
+    4300056: WheelMount
+    4300058: Wheel5
+    4300060: Wheel6
+    4300062: Wheel7
+    4300064: Wheel8
+    4300066: Body
+    4300068: RobotPalm
+    4300070: Thumb1
+    4300072: Finger1
+    4300074: Finger2
+    4300076: Finger3
+    4300078: RobotPalm1
+    4300080: Thumb2
+    4300082: Finger6
+    4300084: Finger5
+    4300086: Finger4
+    4300088: polySurface1
+    4300090: polySurface2
+    4300092: polySurface3
+    4300094: polySurface4
+    4300096: polySurface5
+    4300098: polySurface6
+    4300100: polySurface7
+    4300102: polySurface8
+    4300104: polySurface9
+    4300106: polySurface10
+    4300108: polySurface11
+    4300110: polySurface12
+    4300112: polySurface13
+    4300114: polySurface14
+    4300116: polySurface15
+    4300118: polySurface16
+    4300120: polySurface17
+    4300122: polySurface18
+    4300124: polySurface19
+    4300126: polySurface20
+    4300128: polySurface24
+    4300130: polySurface25
+    4300132: polySurface26
+    4300134: polySurface27
+    4300136: polySurface28
+    4300138: polySurface34
+    4300140: polySurface35
+    4300142: polySurface36
+    4300144: polySurface37
+    4300146: polySurface38
+    4300148: polySurface39
+    4300150: polySurface40
+    4300152: polySurface41
+    4300154: polySurface42
+    4300156: polySurface43
+    4300158: polySurface44
+    4300160: polySurface46
+    4300162: polySurface47
+    4300164: polySurface48
+    4300166: polySurface49
+    7400000: Idle
+    7400002: Skate
+    7400004: IntoJump
+    7400006: Jump
+    7400008: JumpFire
+    7400010: Fire
+    9500000: //RootNode
+    13700000: Body
+    13700002: EngineHead
+    13700004: EyeLid
+    13700006: Finger1
+    13700008: Finger2
+    13700010: Finger3
+    13700012: Finger4
+    13700014: Finger5
+    13700016: Finger6
+    13700018: Gear1
+    13700020: Gear2
+    13700022: Gear3
+    13700024: HeadLight1
+    13700026: HeadLight2
+    13700028: HeadLight3
+    13700030: PistonBottom10
+    13700032: PistonBottom11
+    13700034: PistonBottom6
+    13700036: PistonBottom7
+    13700038: PistonBottom8
+    13700040: PistonBottom9
+    13700042: PistonTop10
+    13700044: PistonTop11
+    13700046: PistonTop6
+    13700048: PistonTop7
+    13700050: PistonTop8
+    13700052: PistonTop9
+    13700054: RobotPalm
+    13700056: RobotPalm1
+    13700058: Thumb1
+    13700060: Thumb2
+    13700062: Wheel1
+    13700064: Wheel2
+    13700066: Wheel3
+    13700068: Wheel4
+    13700070: Wheel5
+    13700072: Wheel6
+    13700074: Wheel7
+    13700076: Wheel8
+    13700078: WheelMount
+    13700080: WheelMount1
+    13700082: WireHead1
+    13700084: WireHead2
+    13700086: WireHead3
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 119
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DOop
+        weight: 1
+      - path: DOop/polySurface1
+        weight: 1
+      - path: DOop/polySurface2
+        weight: 1
+      - path: DOop/polySurface3
+        weight: 1
+      - path: DOop/polySurface4
+        weight: 1
+      - path: DOop/polySurface5
+        weight: 1
+      - path: DOop/polySurface6
+        weight: 1
+      - path: DOop/polySurface7
+        weight: 1
+      - path: DOop/polySurface8
+        weight: 1
+      - path: DOop/polySurface9
+        weight: 1
+      - path: DOop/polySurface10
+        weight: 1
+      - path: DOop/polySurface11
+        weight: 1
+      - path: DOop/polySurface12
+        weight: 1
+      - path: DOop/polySurface13
+        weight: 1
+      - path: DOop/polySurface14
+        weight: 1
+      - path: DOop/polySurface15
+        weight: 1
+      - path: DOop/polySurface16
+        weight: 1
+      - path: DOop/polySurface17
+        weight: 1
+      - path: DOop/polySurface18
+        weight: 1
+      - path: DOop/polySurface19
+        weight: 1
+      - path: DOop/polySurface20
+        weight: 1
+      - path: DOop/polySurface24
+        weight: 1
+      - path: DOop/polySurface25
+        weight: 1
+      - path: DOop/polySurface26
+        weight: 1
+      - path: DOop/polySurface27
+        weight: 1
+      - path: DOop/polySurface28
+        weight: 1
+      - path: DOop/polySurface29 1
+        weight: 1
+      - path: DOop/polySurface29 1/transform54
+        weight: 1
+      - path: DOop/polySurface30
+        weight: 1
+      - path: DOop/polySurface30/transform50
+        weight: 1
+      - path: DOop/polySurface31
+        weight: 1
+      - path: DOop/polySurface31/transform51
+        weight: 1
+      - path: DOop/polySurface32
+        weight: 1
+      - path: DOop/polySurface32/transform52
+        weight: 1
+      - path: DOop/polySurface33
+        weight: 1
+      - path: DOop/polySurface33/transform53
+        weight: 1
+      - path: DOop/polySurface34
+        weight: 1
+      - path: DOop/polySurface35
+        weight: 1
+      - path: DOop/polySurface36
+        weight: 1
+      - path: DOop/polySurface37
+        weight: 1
+      - path: DOop/polySurface38
+        weight: 1
+      - path: DOop/polySurface39
+        weight: 1
+      - path: DOop/polySurface40
+        weight: 1
+      - path: DOop/polySurface41
+        weight: 1
+      - path: DOop/polySurface42
+        weight: 1
+      - path: DOop/polySurface43
+        weight: 1
+      - path: DOop/polySurface44
+        weight: 1
+      - path: DOop/transform49
+        weight: 1
+      - path: polySurface29
+        weight: 1
+      - path: polySurface29/polySurface46
+        weight: 1
+      - path: polySurface29/polySurface47
+        weight: 1
+      - path: polySurface29/polySurface48
+        weight: 1
+      - path: polySurface29/polySurface49
+        weight: 1
+      - path: polySurface29/transform55
+        weight: 1
+      - path: robot
+        weight: 1
+      - path: robot/Body
+        weight: 1
+      - path: robot/Body/transform15
+        weight: 1
+      - path: robot/EngineHead
+        weight: 1
+      - path: robot/EngineHead/EyeLid
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1/transform46
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2/transform45
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3/transform44
+        weight: 1
+      - path: robot/EngineHead/EyeLid/transform47
+        weight: 1
+      - path: robot/EngineHead/Gear1
+        weight: 1
+      - path: robot/EngineHead/Gear1/transform35
+        weight: 1
+      - path: robot/EngineHead/Gear2
+        weight: 1
+      - path: robot/EngineHead/Gear2/transform36
+        weight: 1
+      - path: robot/EngineHead/Gear3
+        weight: 1
+      - path: robot/EngineHead/Gear3/transform37
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6/transform43
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7/transform38
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8/transform41
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9/transform30
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10/transform34
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11/transform31
+        weight: 1
+      - path: robot/EngineHead/PistonTop6
+        weight: 1
+      - path: robot/EngineHead/PistonTop6/transform42
+        weight: 1
+      - path: robot/EngineHead/PistonTop7
+        weight: 1
+      - path: robot/EngineHead/PistonTop7/transform39
+        weight: 1
+      - path: robot/EngineHead/PistonTop8
+        weight: 1
+      - path: robot/EngineHead/PistonTop8/transform40
+        weight: 1
+      - path: robot/EngineHead/PistonTop9
+        weight: 1
+      - path: robot/EngineHead/PistonTop9/transform29
+        weight: 1
+      - path: robot/EngineHead/PistonTop10
+        weight: 1
+      - path: robot/EngineHead/PistonTop10/transform33
+        weight: 1
+      - path: robot/EngineHead/PistonTop11
+        weight: 1
+      - path: robot/EngineHead/PistonTop11/transform32
+        weight: 1
+      - path: robot/EngineHead/transform48
+        weight: 1
+      - path: robot/EngineHead/WireHead1
+        weight: 1
+      - path: robot/EngineHead/WireHead1/transform28
+        weight: 1
+      - path: robot/EngineHead/WireHead2
+        weight: 1
+      - path: robot/EngineHead/WireHead2/transform26
+        weight: 1
+      - path: robot/EngineHead/WireHead3
+        weight: 1
+      - path: robot/EngineHead/WireHead3/transform27
+        weight: 1
+      - path: robot/RobotPalm
+        weight: 1
+      - path: robot/RobotPalm/Finger1
+        weight: 1
+      - path: robot/RobotPalm/Finger1/transform12
+        weight: 1
+      - path: robot/RobotPalm/Finger2
+        weight: 1
+      - path: robot/RobotPalm/Finger2/transform11
+        weight: 1
+      - path: robot/RobotPalm/Finger3
+        weight: 1
+      - path: robot/RobotPalm/Finger3/transform10
+        weight: 1
+      - path: robot/RobotPalm/Thumb1
+        weight: 1
+      - path: robot/RobotPalm/Thumb1/transform13
+        weight: 1
+      - path: robot/RobotPalm/transform14
+        weight: 1
+      - path: robot/RobotPalm1
+        weight: 1
+      - path: robot/RobotPalm1/Finger4
+        weight: 1
+      - path: robot/RobotPalm1/Finger4/transform5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5/transform6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6/transform7
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2/transform8
+        weight: 1
+      - path: robot/RobotPalm1/transform9
+        weight: 1
+      - path: robot/WheelMount
+        weight: 1
+      - path: robot/WheelMount/transform20
+        weight: 1
+      - path: robot/WheelMount/Wheel5
+        weight: 1
+      - path: robot/WheelMount/Wheel5/transform19
+        weight: 1
+      - path: robot/WheelMount/Wheel6
+        weight: 1
+      - path: robot/WheelMount/Wheel6/transform18
+        weight: 1
+      - path: robot/WheelMount/Wheel7
+        weight: 1
+      - path: robot/WheelMount/Wheel7/transform17
+        weight: 1
+      - path: robot/WheelMount/Wheel8
+        weight: 1
+      - path: robot/WheelMount/Wheel8/transform16
+        weight: 1
+      - path: robot/WheelMount1
+        weight: 1
+      - path: robot/WheelMount1/transform25
+        weight: 1
+      - path: robot/WheelMount1/Wheel1
+        weight: 1
+      - path: robot/WheelMount1/Wheel1/transform21
+        weight: 1
+      - path: robot/WheelMount1/Wheel2
+        weight: 1
+      - path: robot/WheelMount1/Wheel2/transform22
+        weight: 1
+      - path: robot/WheelMount1/Wheel3
+        weight: 1
+      - path: robot/WheelMount1/Wheel3/transform23
+        weight: 1
+      - path: robot/WheelMount1/Wheel4
+        weight: 1
+      - path: robot/WheelMount1/Wheel4/transform24
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/L_Hip
+        weight: 1
+      - path: Root/L_Hip/L_Thigh
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot/L_Toes
+        weight: 1
+      - path: Root/R_Hip
+        weight: 1
+      - path: Root/R_Hip/R_Thigh
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot/R_Toes
+        weight: 1
+      - path: Root/Waist
+        weight: 1
+      - path: Root/Waist/Sternum
+        weight: 1
+      - path: Root/Waist/Sternum/Chest
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers/L_Fingertips
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/Neck
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers/R_Fingertips
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Skate
+      takeName: Take 001
+      firstFrame: 121
+      lastFrame: 180
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DOop
+        weight: 1
+      - path: DOop/polySurface1
+        weight: 1
+      - path: DOop/polySurface2
+        weight: 1
+      - path: DOop/polySurface3
+        weight: 1
+      - path: DOop/polySurface4
+        weight: 1
+      - path: DOop/polySurface5
+        weight: 1
+      - path: DOop/polySurface6
+        weight: 1
+      - path: DOop/polySurface7
+        weight: 1
+      - path: DOop/polySurface8
+        weight: 1
+      - path: DOop/polySurface9
+        weight: 1
+      - path: DOop/polySurface10
+        weight: 1
+      - path: DOop/polySurface11
+        weight: 1
+      - path: DOop/polySurface12
+        weight: 1
+      - path: DOop/polySurface13
+        weight: 1
+      - path: DOop/polySurface14
+        weight: 1
+      - path: DOop/polySurface15
+        weight: 1
+      - path: DOop/polySurface16
+        weight: 1
+      - path: DOop/polySurface17
+        weight: 1
+      - path: DOop/polySurface18
+        weight: 1
+      - path: DOop/polySurface19
+        weight: 1
+      - path: DOop/polySurface20
+        weight: 1
+      - path: DOop/polySurface24
+        weight: 1
+      - path: DOop/polySurface25
+        weight: 1
+      - path: DOop/polySurface26
+        weight: 1
+      - path: DOop/polySurface27
+        weight: 1
+      - path: DOop/polySurface28
+        weight: 1
+      - path: DOop/polySurface29 1
+        weight: 1
+      - path: DOop/polySurface29 1/transform54
+        weight: 1
+      - path: DOop/polySurface30
+        weight: 1
+      - path: DOop/polySurface30/transform50
+        weight: 1
+      - path: DOop/polySurface31
+        weight: 1
+      - path: DOop/polySurface31/transform51
+        weight: 1
+      - path: DOop/polySurface32
+        weight: 1
+      - path: DOop/polySurface32/transform52
+        weight: 1
+      - path: DOop/polySurface33
+        weight: 1
+      - path: DOop/polySurface33/transform53
+        weight: 1
+      - path: DOop/polySurface34
+        weight: 1
+      - path: DOop/polySurface35
+        weight: 1
+      - path: DOop/polySurface36
+        weight: 1
+      - path: DOop/polySurface37
+        weight: 1
+      - path: DOop/polySurface38
+        weight: 1
+      - path: DOop/polySurface39
+        weight: 1
+      - path: DOop/polySurface40
+        weight: 1
+      - path: DOop/polySurface41
+        weight: 1
+      - path: DOop/polySurface42
+        weight: 1
+      - path: DOop/polySurface43
+        weight: 1
+      - path: DOop/polySurface44
+        weight: 1
+      - path: DOop/transform49
+        weight: 1
+      - path: polySurface29
+        weight: 1
+      - path: polySurface29/polySurface46
+        weight: 1
+      - path: polySurface29/polySurface47
+        weight: 1
+      - path: polySurface29/polySurface48
+        weight: 1
+      - path: polySurface29/polySurface49
+        weight: 1
+      - path: polySurface29/transform55
+        weight: 1
+      - path: robot
+        weight: 1
+      - path: robot/Body
+        weight: 1
+      - path: robot/Body/transform15
+        weight: 1
+      - path: robot/EngineHead
+        weight: 1
+      - path: robot/EngineHead/EyeLid
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1/transform46
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2/transform45
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3/transform44
+        weight: 1
+      - path: robot/EngineHead/EyeLid/transform47
+        weight: 1
+      - path: robot/EngineHead/Gear1
+        weight: 1
+      - path: robot/EngineHead/Gear1/transform35
+        weight: 1
+      - path: robot/EngineHead/Gear2
+        weight: 1
+      - path: robot/EngineHead/Gear2/transform36
+        weight: 1
+      - path: robot/EngineHead/Gear3
+        weight: 1
+      - path: robot/EngineHead/Gear3/transform37
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6/transform43
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7/transform38
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8/transform41
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9/transform30
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10/transform34
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11/transform31
+        weight: 1
+      - path: robot/EngineHead/PistonTop6
+        weight: 1
+      - path: robot/EngineHead/PistonTop6/transform42
+        weight: 1
+      - path: robot/EngineHead/PistonTop7
+        weight: 1
+      - path: robot/EngineHead/PistonTop7/transform39
+        weight: 1
+      - path: robot/EngineHead/PistonTop8
+        weight: 1
+      - path: robot/EngineHead/PistonTop8/transform40
+        weight: 1
+      - path: robot/EngineHead/PistonTop9
+        weight: 1
+      - path: robot/EngineHead/PistonTop9/transform29
+        weight: 1
+      - path: robot/EngineHead/PistonTop10
+        weight: 1
+      - path: robot/EngineHead/PistonTop10/transform33
+        weight: 1
+      - path: robot/EngineHead/PistonTop11
+        weight: 1
+      - path: robot/EngineHead/PistonTop11/transform32
+        weight: 1
+      - path: robot/EngineHead/transform48
+        weight: 1
+      - path: robot/EngineHead/WireHead1
+        weight: 1
+      - path: robot/EngineHead/WireHead1/transform28
+        weight: 1
+      - path: robot/EngineHead/WireHead2
+        weight: 1
+      - path: robot/EngineHead/WireHead2/transform26
+        weight: 1
+      - path: robot/EngineHead/WireHead3
+        weight: 1
+      - path: robot/EngineHead/WireHead3/transform27
+        weight: 1
+      - path: robot/RobotPalm
+        weight: 1
+      - path: robot/RobotPalm/Finger1
+        weight: 1
+      - path: robot/RobotPalm/Finger1/transform12
+        weight: 1
+      - path: robot/RobotPalm/Finger2
+        weight: 1
+      - path: robot/RobotPalm/Finger2/transform11
+        weight: 1
+      - path: robot/RobotPalm/Finger3
+        weight: 1
+      - path: robot/RobotPalm/Finger3/transform10
+        weight: 1
+      - path: robot/RobotPalm/Thumb1
+        weight: 1
+      - path: robot/RobotPalm/Thumb1/transform13
+        weight: 1
+      - path: robot/RobotPalm/transform14
+        weight: 1
+      - path: robot/RobotPalm1
+        weight: 1
+      - path: robot/RobotPalm1/Finger4
+        weight: 1
+      - path: robot/RobotPalm1/Finger4/transform5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5/transform6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6/transform7
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2/transform8
+        weight: 1
+      - path: robot/RobotPalm1/transform9
+        weight: 1
+      - path: robot/WheelMount
+        weight: 1
+      - path: robot/WheelMount/transform20
+        weight: 1
+      - path: robot/WheelMount/Wheel5
+        weight: 1
+      - path: robot/WheelMount/Wheel5/transform19
+        weight: 1
+      - path: robot/WheelMount/Wheel6
+        weight: 1
+      - path: robot/WheelMount/Wheel6/transform18
+        weight: 1
+      - path: robot/WheelMount/Wheel7
+        weight: 1
+      - path: robot/WheelMount/Wheel7/transform17
+        weight: 1
+      - path: robot/WheelMount/Wheel8
+        weight: 1
+      - path: robot/WheelMount/Wheel8/transform16
+        weight: 1
+      - path: robot/WheelMount1
+        weight: 1
+      - path: robot/WheelMount1/transform25
+        weight: 1
+      - path: robot/WheelMount1/Wheel1
+        weight: 1
+      - path: robot/WheelMount1/Wheel1/transform21
+        weight: 1
+      - path: robot/WheelMount1/Wheel2
+        weight: 1
+      - path: robot/WheelMount1/Wheel2/transform22
+        weight: 1
+      - path: robot/WheelMount1/Wheel3
+        weight: 1
+      - path: robot/WheelMount1/Wheel3/transform23
+        weight: 1
+      - path: robot/WheelMount1/Wheel4
+        weight: 1
+      - path: robot/WheelMount1/Wheel4/transform24
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/L_Hip
+        weight: 1
+      - path: Root/L_Hip/L_Thigh
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot/L_Toes
+        weight: 1
+      - path: Root/R_Hip
+        weight: 1
+      - path: Root/R_Hip/R_Thigh
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot/R_Toes
+        weight: 1
+      - path: Root/Waist
+        weight: 1
+      - path: Root/Waist/Sternum
+        weight: 1
+      - path: Root/Waist/Sternum/Chest
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers/L_Fingertips
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/Neck
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers/R_Fingertips
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: IntoJump
+      takeName: Take 001
+      firstFrame: 181
+      lastFrame: 195
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DOop
+        weight: 1
+      - path: DOop/polySurface1
+        weight: 1
+      - path: DOop/polySurface2
+        weight: 1
+      - path: DOop/polySurface3
+        weight: 1
+      - path: DOop/polySurface4
+        weight: 1
+      - path: DOop/polySurface5
+        weight: 1
+      - path: DOop/polySurface6
+        weight: 1
+      - path: DOop/polySurface7
+        weight: 1
+      - path: DOop/polySurface8
+        weight: 1
+      - path: DOop/polySurface9
+        weight: 1
+      - path: DOop/polySurface10
+        weight: 1
+      - path: DOop/polySurface11
+        weight: 1
+      - path: DOop/polySurface12
+        weight: 1
+      - path: DOop/polySurface13
+        weight: 1
+      - path: DOop/polySurface14
+        weight: 1
+      - path: DOop/polySurface15
+        weight: 1
+      - path: DOop/polySurface16
+        weight: 1
+      - path: DOop/polySurface17
+        weight: 1
+      - path: DOop/polySurface18
+        weight: 1
+      - path: DOop/polySurface19
+        weight: 1
+      - path: DOop/polySurface20
+        weight: 1
+      - path: DOop/polySurface24
+        weight: 1
+      - path: DOop/polySurface25
+        weight: 1
+      - path: DOop/polySurface26
+        weight: 1
+      - path: DOop/polySurface27
+        weight: 1
+      - path: DOop/polySurface28
+        weight: 1
+      - path: DOop/polySurface29 1
+        weight: 1
+      - path: DOop/polySurface29 1/transform54
+        weight: 1
+      - path: DOop/polySurface30
+        weight: 1
+      - path: DOop/polySurface30/transform50
+        weight: 1
+      - path: DOop/polySurface31
+        weight: 1
+      - path: DOop/polySurface31/transform51
+        weight: 1
+      - path: DOop/polySurface32
+        weight: 1
+      - path: DOop/polySurface32/transform52
+        weight: 1
+      - path: DOop/polySurface33
+        weight: 1
+      - path: DOop/polySurface33/transform53
+        weight: 1
+      - path: DOop/polySurface34
+        weight: 1
+      - path: DOop/polySurface35
+        weight: 1
+      - path: DOop/polySurface36
+        weight: 1
+      - path: DOop/polySurface37
+        weight: 1
+      - path: DOop/polySurface38
+        weight: 1
+      - path: DOop/polySurface39
+        weight: 1
+      - path: DOop/polySurface40
+        weight: 1
+      - path: DOop/polySurface41
+        weight: 1
+      - path: DOop/polySurface42
+        weight: 1
+      - path: DOop/polySurface43
+        weight: 1
+      - path: DOop/polySurface44
+        weight: 1
+      - path: DOop/transform49
+        weight: 1
+      - path: polySurface29
+        weight: 1
+      - path: polySurface29/polySurface46
+        weight: 1
+      - path: polySurface29/polySurface47
+        weight: 1
+      - path: polySurface29/polySurface48
+        weight: 1
+      - path: polySurface29/polySurface49
+        weight: 1
+      - path: polySurface29/transform55
+        weight: 1
+      - path: robot
+        weight: 1
+      - path: robot/Body
+        weight: 1
+      - path: robot/Body/transform15
+        weight: 1
+      - path: robot/EngineHead
+        weight: 1
+      - path: robot/EngineHead/EyeLid
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1/transform46
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2/transform45
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3/transform44
+        weight: 1
+      - path: robot/EngineHead/EyeLid/transform47
+        weight: 1
+      - path: robot/EngineHead/Gear1
+        weight: 1
+      - path: robot/EngineHead/Gear1/transform35
+        weight: 1
+      - path: robot/EngineHead/Gear2
+        weight: 1
+      - path: robot/EngineHead/Gear2/transform36
+        weight: 1
+      - path: robot/EngineHead/Gear3
+        weight: 1
+      - path: robot/EngineHead/Gear3/transform37
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6/transform43
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7/transform38
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8/transform41
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9/transform30
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10/transform34
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11/transform31
+        weight: 1
+      - path: robot/EngineHead/PistonTop6
+        weight: 1
+      - path: robot/EngineHead/PistonTop6/transform42
+        weight: 1
+      - path: robot/EngineHead/PistonTop7
+        weight: 1
+      - path: robot/EngineHead/PistonTop7/transform39
+        weight: 1
+      - path: robot/EngineHead/PistonTop8
+        weight: 1
+      - path: robot/EngineHead/PistonTop8/transform40
+        weight: 1
+      - path: robot/EngineHead/PistonTop9
+        weight: 1
+      - path: robot/EngineHead/PistonTop9/transform29
+        weight: 1
+      - path: robot/EngineHead/PistonTop10
+        weight: 1
+      - path: robot/EngineHead/PistonTop10/transform33
+        weight: 1
+      - path: robot/EngineHead/PistonTop11
+        weight: 1
+      - path: robot/EngineHead/PistonTop11/transform32
+        weight: 1
+      - path: robot/EngineHead/transform48
+        weight: 1
+      - path: robot/EngineHead/WireHead1
+        weight: 1
+      - path: robot/EngineHead/WireHead1/transform28
+        weight: 1
+      - path: robot/EngineHead/WireHead2
+        weight: 1
+      - path: robot/EngineHead/WireHead2/transform26
+        weight: 1
+      - path: robot/EngineHead/WireHead3
+        weight: 1
+      - path: robot/EngineHead/WireHead3/transform27
+        weight: 1
+      - path: robot/RobotPalm
+        weight: 1
+      - path: robot/RobotPalm/Finger1
+        weight: 1
+      - path: robot/RobotPalm/Finger1/transform12
+        weight: 1
+      - path: robot/RobotPalm/Finger2
+        weight: 1
+      - path: robot/RobotPalm/Finger2/transform11
+        weight: 1
+      - path: robot/RobotPalm/Finger3
+        weight: 1
+      - path: robot/RobotPalm/Finger3/transform10
+        weight: 1
+      - path: robot/RobotPalm/Thumb1
+        weight: 1
+      - path: robot/RobotPalm/Thumb1/transform13
+        weight: 1
+      - path: robot/RobotPalm/transform14
+        weight: 1
+      - path: robot/RobotPalm1
+        weight: 1
+      - path: robot/RobotPalm1/Finger4
+        weight: 1
+      - path: robot/RobotPalm1/Finger4/transform5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5/transform6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6/transform7
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2/transform8
+        weight: 1
+      - path: robot/RobotPalm1/transform9
+        weight: 1
+      - path: robot/WheelMount
+        weight: 1
+      - path: robot/WheelMount/transform20
+        weight: 1
+      - path: robot/WheelMount/Wheel5
+        weight: 1
+      - path: robot/WheelMount/Wheel5/transform19
+        weight: 1
+      - path: robot/WheelMount/Wheel6
+        weight: 1
+      - path: robot/WheelMount/Wheel6/transform18
+        weight: 1
+      - path: robot/WheelMount/Wheel7
+        weight: 1
+      - path: robot/WheelMount/Wheel7/transform17
+        weight: 1
+      - path: robot/WheelMount/Wheel8
+        weight: 1
+      - path: robot/WheelMount/Wheel8/transform16
+        weight: 1
+      - path: robot/WheelMount1
+        weight: 1
+      - path: robot/WheelMount1/transform25
+        weight: 1
+      - path: robot/WheelMount1/Wheel1
+        weight: 1
+      - path: robot/WheelMount1/Wheel1/transform21
+        weight: 1
+      - path: robot/WheelMount1/Wheel2
+        weight: 1
+      - path: robot/WheelMount1/Wheel2/transform22
+        weight: 1
+      - path: robot/WheelMount1/Wheel3
+        weight: 1
+      - path: robot/WheelMount1/Wheel3/transform23
+        weight: 1
+      - path: robot/WheelMount1/Wheel4
+        weight: 1
+      - path: robot/WheelMount1/Wheel4/transform24
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/L_Hip
+        weight: 1
+      - path: Root/L_Hip/L_Thigh
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot/L_Toes
+        weight: 1
+      - path: Root/R_Hip
+        weight: 1
+      - path: Root/R_Hip/R_Thigh
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot/R_Toes
+        weight: 1
+      - path: Root/Waist
+        weight: 1
+      - path: Root/Waist/Sternum
+        weight: 1
+      - path: Root/Waist/Sternum/Chest
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers/L_Fingertips
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/Neck
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers/R_Fingertips
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 196
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DOop
+        weight: 1
+      - path: DOop/polySurface1
+        weight: 1
+      - path: DOop/polySurface2
+        weight: 1
+      - path: DOop/polySurface3
+        weight: 1
+      - path: DOop/polySurface4
+        weight: 1
+      - path: DOop/polySurface5
+        weight: 1
+      - path: DOop/polySurface6
+        weight: 1
+      - path: DOop/polySurface7
+        weight: 1
+      - path: DOop/polySurface8
+        weight: 1
+      - path: DOop/polySurface9
+        weight: 1
+      - path: DOop/polySurface10
+        weight: 1
+      - path: DOop/polySurface11
+        weight: 1
+      - path: DOop/polySurface12
+        weight: 1
+      - path: DOop/polySurface13
+        weight: 1
+      - path: DOop/polySurface14
+        weight: 1
+      - path: DOop/polySurface15
+        weight: 1
+      - path: DOop/polySurface16
+        weight: 1
+      - path: DOop/polySurface17
+        weight: 1
+      - path: DOop/polySurface18
+        weight: 1
+      - path: DOop/polySurface19
+        weight: 1
+      - path: DOop/polySurface20
+        weight: 1
+      - path: DOop/polySurface24
+        weight: 1
+      - path: DOop/polySurface25
+        weight: 1
+      - path: DOop/polySurface26
+        weight: 1
+      - path: DOop/polySurface27
+        weight: 1
+      - path: DOop/polySurface28
+        weight: 1
+      - path: DOop/polySurface29 1
+        weight: 1
+      - path: DOop/polySurface29 1/transform54
+        weight: 1
+      - path: DOop/polySurface30
+        weight: 1
+      - path: DOop/polySurface30/transform50
+        weight: 1
+      - path: DOop/polySurface31
+        weight: 1
+      - path: DOop/polySurface31/transform51
+        weight: 1
+      - path: DOop/polySurface32
+        weight: 1
+      - path: DOop/polySurface32/transform52
+        weight: 1
+      - path: DOop/polySurface33
+        weight: 1
+      - path: DOop/polySurface33/transform53
+        weight: 1
+      - path: DOop/polySurface34
+        weight: 1
+      - path: DOop/polySurface35
+        weight: 1
+      - path: DOop/polySurface36
+        weight: 1
+      - path: DOop/polySurface37
+        weight: 1
+      - path: DOop/polySurface38
+        weight: 1
+      - path: DOop/polySurface39
+        weight: 1
+      - path: DOop/polySurface40
+        weight: 1
+      - path: DOop/polySurface41
+        weight: 1
+      - path: DOop/polySurface42
+        weight: 1
+      - path: DOop/polySurface43
+        weight: 1
+      - path: DOop/polySurface44
+        weight: 1
+      - path: DOop/transform49
+        weight: 1
+      - path: polySurface29
+        weight: 1
+      - path: polySurface29/polySurface46
+        weight: 1
+      - path: polySurface29/polySurface47
+        weight: 1
+      - path: polySurface29/polySurface48
+        weight: 1
+      - path: polySurface29/polySurface49
+        weight: 1
+      - path: polySurface29/transform55
+        weight: 1
+      - path: robot
+        weight: 1
+      - path: robot/Body
+        weight: 1
+      - path: robot/Body/transform15
+        weight: 1
+      - path: robot/EngineHead
+        weight: 1
+      - path: robot/EngineHead/EyeLid
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1/transform46
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2/transform45
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3/transform44
+        weight: 1
+      - path: robot/EngineHead/EyeLid/transform47
+        weight: 1
+      - path: robot/EngineHead/Gear1
+        weight: 1
+      - path: robot/EngineHead/Gear1/transform35
+        weight: 1
+      - path: robot/EngineHead/Gear2
+        weight: 1
+      - path: robot/EngineHead/Gear2/transform36
+        weight: 1
+      - path: robot/EngineHead/Gear3
+        weight: 1
+      - path: robot/EngineHead/Gear3/transform37
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6/transform43
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7/transform38
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8/transform41
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9/transform30
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10/transform34
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11/transform31
+        weight: 1
+      - path: robot/EngineHead/PistonTop6
+        weight: 1
+      - path: robot/EngineHead/PistonTop6/transform42
+        weight: 1
+      - path: robot/EngineHead/PistonTop7
+        weight: 1
+      - path: robot/EngineHead/PistonTop7/transform39
+        weight: 1
+      - path: robot/EngineHead/PistonTop8
+        weight: 1
+      - path: robot/EngineHead/PistonTop8/transform40
+        weight: 1
+      - path: robot/EngineHead/PistonTop9
+        weight: 1
+      - path: robot/EngineHead/PistonTop9/transform29
+        weight: 1
+      - path: robot/EngineHead/PistonTop10
+        weight: 1
+      - path: robot/EngineHead/PistonTop10/transform33
+        weight: 1
+      - path: robot/EngineHead/PistonTop11
+        weight: 1
+      - path: robot/EngineHead/PistonTop11/transform32
+        weight: 1
+      - path: robot/EngineHead/transform48
+        weight: 1
+      - path: robot/EngineHead/WireHead1
+        weight: 1
+      - path: robot/EngineHead/WireHead1/transform28
+        weight: 1
+      - path: robot/EngineHead/WireHead2
+        weight: 1
+      - path: robot/EngineHead/WireHead2/transform26
+        weight: 1
+      - path: robot/EngineHead/WireHead3
+        weight: 1
+      - path: robot/EngineHead/WireHead3/transform27
+        weight: 1
+      - path: robot/RobotPalm
+        weight: 1
+      - path: robot/RobotPalm/Finger1
+        weight: 1
+      - path: robot/RobotPalm/Finger1/transform12
+        weight: 1
+      - path: robot/RobotPalm/Finger2
+        weight: 1
+      - path: robot/RobotPalm/Finger2/transform11
+        weight: 1
+      - path: robot/RobotPalm/Finger3
+        weight: 1
+      - path: robot/RobotPalm/Finger3/transform10
+        weight: 1
+      - path: robot/RobotPalm/Thumb1
+        weight: 1
+      - path: robot/RobotPalm/Thumb1/transform13
+        weight: 1
+      - path: robot/RobotPalm/transform14
+        weight: 1
+      - path: robot/RobotPalm1
+        weight: 1
+      - path: robot/RobotPalm1/Finger4
+        weight: 1
+      - path: robot/RobotPalm1/Finger4/transform5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5/transform6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6/transform7
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2/transform8
+        weight: 1
+      - path: robot/RobotPalm1/transform9
+        weight: 1
+      - path: robot/WheelMount
+        weight: 1
+      - path: robot/WheelMount/transform20
+        weight: 1
+      - path: robot/WheelMount/Wheel5
+        weight: 1
+      - path: robot/WheelMount/Wheel5/transform19
+        weight: 1
+      - path: robot/WheelMount/Wheel6
+        weight: 1
+      - path: robot/WheelMount/Wheel6/transform18
+        weight: 1
+      - path: robot/WheelMount/Wheel7
+        weight: 1
+      - path: robot/WheelMount/Wheel7/transform17
+        weight: 1
+      - path: robot/WheelMount/Wheel8
+        weight: 1
+      - path: robot/WheelMount/Wheel8/transform16
+        weight: 1
+      - path: robot/WheelMount1
+        weight: 1
+      - path: robot/WheelMount1/transform25
+        weight: 1
+      - path: robot/WheelMount1/Wheel1
+        weight: 1
+      - path: robot/WheelMount1/Wheel1/transform21
+        weight: 1
+      - path: robot/WheelMount1/Wheel2
+        weight: 1
+      - path: robot/WheelMount1/Wheel2/transform22
+        weight: 1
+      - path: robot/WheelMount1/Wheel3
+        weight: 1
+      - path: robot/WheelMount1/Wheel3/transform23
+        weight: 1
+      - path: robot/WheelMount1/Wheel4
+        weight: 1
+      - path: robot/WheelMount1/Wheel4/transform24
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/L_Hip
+        weight: 1
+      - path: Root/L_Hip/L_Thigh
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot/L_Toes
+        weight: 1
+      - path: Root/R_Hip
+        weight: 1
+      - path: Root/R_Hip/R_Thigh
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot/R_Toes
+        weight: 1
+      - path: Root/Waist
+        weight: 1
+      - path: Root/Waist/Sternum
+        weight: 1
+      - path: Root/Waist/Sternum/Chest
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers/L_Fingertips
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/Neck
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers/R_Fingertips
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: JumpFire
+      takeName: Take 001
+      firstFrame: 251
+      lastFrame: 260
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DOop
+        weight: 1
+      - path: DOop/polySurface1
+        weight: 1
+      - path: DOop/polySurface2
+        weight: 1
+      - path: DOop/polySurface3
+        weight: 1
+      - path: DOop/polySurface4
+        weight: 1
+      - path: DOop/polySurface5
+        weight: 1
+      - path: DOop/polySurface6
+        weight: 1
+      - path: DOop/polySurface7
+        weight: 1
+      - path: DOop/polySurface8
+        weight: 1
+      - path: DOop/polySurface9
+        weight: 1
+      - path: DOop/polySurface10
+        weight: 1
+      - path: DOop/polySurface11
+        weight: 1
+      - path: DOop/polySurface12
+        weight: 1
+      - path: DOop/polySurface13
+        weight: 1
+      - path: DOop/polySurface14
+        weight: 1
+      - path: DOop/polySurface15
+        weight: 1
+      - path: DOop/polySurface16
+        weight: 1
+      - path: DOop/polySurface17
+        weight: 1
+      - path: DOop/polySurface18
+        weight: 1
+      - path: DOop/polySurface19
+        weight: 1
+      - path: DOop/polySurface20
+        weight: 1
+      - path: DOop/polySurface24
+        weight: 1
+      - path: DOop/polySurface25
+        weight: 1
+      - path: DOop/polySurface26
+        weight: 1
+      - path: DOop/polySurface27
+        weight: 1
+      - path: DOop/polySurface28
+        weight: 1
+      - path: DOop/polySurface29 1
+        weight: 1
+      - path: DOop/polySurface29 1/transform54
+        weight: 1
+      - path: DOop/polySurface30
+        weight: 1
+      - path: DOop/polySurface30/transform50
+        weight: 1
+      - path: DOop/polySurface31
+        weight: 1
+      - path: DOop/polySurface31/transform51
+        weight: 1
+      - path: DOop/polySurface32
+        weight: 1
+      - path: DOop/polySurface32/transform52
+        weight: 1
+      - path: DOop/polySurface33
+        weight: 1
+      - path: DOop/polySurface33/transform53
+        weight: 1
+      - path: DOop/polySurface34
+        weight: 1
+      - path: DOop/polySurface35
+        weight: 1
+      - path: DOop/polySurface36
+        weight: 1
+      - path: DOop/polySurface37
+        weight: 1
+      - path: DOop/polySurface38
+        weight: 1
+      - path: DOop/polySurface39
+        weight: 1
+      - path: DOop/polySurface40
+        weight: 1
+      - path: DOop/polySurface41
+        weight: 1
+      - path: DOop/polySurface42
+        weight: 1
+      - path: DOop/polySurface43
+        weight: 1
+      - path: DOop/polySurface44
+        weight: 1
+      - path: DOop/transform49
+        weight: 1
+      - path: polySurface29
+        weight: 1
+      - path: polySurface29/polySurface46
+        weight: 1
+      - path: polySurface29/polySurface47
+        weight: 1
+      - path: polySurface29/polySurface48
+        weight: 1
+      - path: polySurface29/polySurface49
+        weight: 1
+      - path: polySurface29/transform55
+        weight: 1
+      - path: robot
+        weight: 1
+      - path: robot/Body
+        weight: 1
+      - path: robot/Body/transform15
+        weight: 1
+      - path: robot/EngineHead
+        weight: 1
+      - path: robot/EngineHead/EyeLid
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1/transform46
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2/transform45
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3/transform44
+        weight: 1
+      - path: robot/EngineHead/EyeLid/transform47
+        weight: 1
+      - path: robot/EngineHead/Gear1
+        weight: 1
+      - path: robot/EngineHead/Gear1/transform35
+        weight: 1
+      - path: robot/EngineHead/Gear2
+        weight: 1
+      - path: robot/EngineHead/Gear2/transform36
+        weight: 1
+      - path: robot/EngineHead/Gear3
+        weight: 1
+      - path: robot/EngineHead/Gear3/transform37
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6/transform43
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7/transform38
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8/transform41
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9/transform30
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10/transform34
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11/transform31
+        weight: 1
+      - path: robot/EngineHead/PistonTop6
+        weight: 1
+      - path: robot/EngineHead/PistonTop6/transform42
+        weight: 1
+      - path: robot/EngineHead/PistonTop7
+        weight: 1
+      - path: robot/EngineHead/PistonTop7/transform39
+        weight: 1
+      - path: robot/EngineHead/PistonTop8
+        weight: 1
+      - path: robot/EngineHead/PistonTop8/transform40
+        weight: 1
+      - path: robot/EngineHead/PistonTop9
+        weight: 1
+      - path: robot/EngineHead/PistonTop9/transform29
+        weight: 1
+      - path: robot/EngineHead/PistonTop10
+        weight: 1
+      - path: robot/EngineHead/PistonTop10/transform33
+        weight: 1
+      - path: robot/EngineHead/PistonTop11
+        weight: 1
+      - path: robot/EngineHead/PistonTop11/transform32
+        weight: 1
+      - path: robot/EngineHead/transform48
+        weight: 1
+      - path: robot/EngineHead/WireHead1
+        weight: 1
+      - path: robot/EngineHead/WireHead1/transform28
+        weight: 1
+      - path: robot/EngineHead/WireHead2
+        weight: 1
+      - path: robot/EngineHead/WireHead2/transform26
+        weight: 1
+      - path: robot/EngineHead/WireHead3
+        weight: 1
+      - path: robot/EngineHead/WireHead3/transform27
+        weight: 1
+      - path: robot/RobotPalm
+        weight: 1
+      - path: robot/RobotPalm/Finger1
+        weight: 1
+      - path: robot/RobotPalm/Finger1/transform12
+        weight: 1
+      - path: robot/RobotPalm/Finger2
+        weight: 1
+      - path: robot/RobotPalm/Finger2/transform11
+        weight: 1
+      - path: robot/RobotPalm/Finger3
+        weight: 1
+      - path: robot/RobotPalm/Finger3/transform10
+        weight: 1
+      - path: robot/RobotPalm/Thumb1
+        weight: 1
+      - path: robot/RobotPalm/Thumb1/transform13
+        weight: 1
+      - path: robot/RobotPalm/transform14
+        weight: 1
+      - path: robot/RobotPalm1
+        weight: 1
+      - path: robot/RobotPalm1/Finger4
+        weight: 1
+      - path: robot/RobotPalm1/Finger4/transform5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5/transform6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6/transform7
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2/transform8
+        weight: 1
+      - path: robot/RobotPalm1/transform9
+        weight: 1
+      - path: robot/WheelMount
+        weight: 1
+      - path: robot/WheelMount/transform20
+        weight: 1
+      - path: robot/WheelMount/Wheel5
+        weight: 1
+      - path: robot/WheelMount/Wheel5/transform19
+        weight: 1
+      - path: robot/WheelMount/Wheel6
+        weight: 1
+      - path: robot/WheelMount/Wheel6/transform18
+        weight: 1
+      - path: robot/WheelMount/Wheel7
+        weight: 1
+      - path: robot/WheelMount/Wheel7/transform17
+        weight: 1
+      - path: robot/WheelMount/Wheel8
+        weight: 1
+      - path: robot/WheelMount/Wheel8/transform16
+        weight: 1
+      - path: robot/WheelMount1
+        weight: 1
+      - path: robot/WheelMount1/transform25
+        weight: 1
+      - path: robot/WheelMount1/Wheel1
+        weight: 1
+      - path: robot/WheelMount1/Wheel1/transform21
+        weight: 1
+      - path: robot/WheelMount1/Wheel2
+        weight: 1
+      - path: robot/WheelMount1/Wheel2/transform22
+        weight: 1
+      - path: robot/WheelMount1/Wheel3
+        weight: 1
+      - path: robot/WheelMount1/Wheel3/transform23
+        weight: 1
+      - path: robot/WheelMount1/Wheel4
+        weight: 1
+      - path: robot/WheelMount1/Wheel4/transform24
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/L_Hip
+        weight: 1
+      - path: Root/L_Hip/L_Thigh
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot/L_Toes
+        weight: 1
+      - path: Root/R_Hip
+        weight: 1
+      - path: Root/R_Hip/R_Thigh
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot/R_Toes
+        weight: 1
+      - path: Root/Waist
+        weight: 1
+      - path: Root/Waist/Sternum
+        weight: 1
+      - path: Root/Waist/Sternum/Chest
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers/L_Fingertips
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/Neck
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers/R_Fingertips
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Fire
+      takeName: Take 001
+      firstFrame: 211
+      lastFrame: 275
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DOop
+        weight: 1
+      - path: DOop/polySurface1
+        weight: 1
+      - path: DOop/polySurface2
+        weight: 1
+      - path: DOop/polySurface3
+        weight: 1
+      - path: DOop/polySurface4
+        weight: 1
+      - path: DOop/polySurface5
+        weight: 1
+      - path: DOop/polySurface6
+        weight: 1
+      - path: DOop/polySurface7
+        weight: 1
+      - path: DOop/polySurface8
+        weight: 1
+      - path: DOop/polySurface9
+        weight: 1
+      - path: DOop/polySurface10
+        weight: 1
+      - path: DOop/polySurface11
+        weight: 1
+      - path: DOop/polySurface12
+        weight: 1
+      - path: DOop/polySurface13
+        weight: 1
+      - path: DOop/polySurface14
+        weight: 1
+      - path: DOop/polySurface15
+        weight: 1
+      - path: DOop/polySurface16
+        weight: 1
+      - path: DOop/polySurface17
+        weight: 1
+      - path: DOop/polySurface18
+        weight: 1
+      - path: DOop/polySurface19
+        weight: 1
+      - path: DOop/polySurface20
+        weight: 1
+      - path: DOop/polySurface24
+        weight: 1
+      - path: DOop/polySurface25
+        weight: 1
+      - path: DOop/polySurface26
+        weight: 1
+      - path: DOop/polySurface27
+        weight: 1
+      - path: DOop/polySurface28
+        weight: 1
+      - path: DOop/polySurface29 1
+        weight: 1
+      - path: DOop/polySurface29 1/transform54
+        weight: 1
+      - path: DOop/polySurface30
+        weight: 1
+      - path: DOop/polySurface30/transform50
+        weight: 1
+      - path: DOop/polySurface31
+        weight: 1
+      - path: DOop/polySurface31/transform51
+        weight: 1
+      - path: DOop/polySurface32
+        weight: 1
+      - path: DOop/polySurface32/transform52
+        weight: 1
+      - path: DOop/polySurface33
+        weight: 1
+      - path: DOop/polySurface33/transform53
+        weight: 1
+      - path: DOop/polySurface34
+        weight: 1
+      - path: DOop/polySurface35
+        weight: 1
+      - path: DOop/polySurface36
+        weight: 1
+      - path: DOop/polySurface37
+        weight: 1
+      - path: DOop/polySurface38
+        weight: 1
+      - path: DOop/polySurface39
+        weight: 1
+      - path: DOop/polySurface40
+        weight: 1
+      - path: DOop/polySurface41
+        weight: 1
+      - path: DOop/polySurface42
+        weight: 1
+      - path: DOop/polySurface43
+        weight: 1
+      - path: DOop/polySurface44
+        weight: 1
+      - path: DOop/transform49
+        weight: 1
+      - path: polySurface29
+        weight: 1
+      - path: polySurface29/polySurface46
+        weight: 1
+      - path: polySurface29/polySurface47
+        weight: 1
+      - path: polySurface29/polySurface48
+        weight: 1
+      - path: polySurface29/polySurface49
+        weight: 1
+      - path: polySurface29/transform55
+        weight: 1
+      - path: robot
+        weight: 1
+      - path: robot/Body
+        weight: 1
+      - path: robot/Body/transform15
+        weight: 1
+      - path: robot/EngineHead
+        weight: 1
+      - path: robot/EngineHead/EyeLid
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight1/transform46
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight2/transform45
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3
+        weight: 1
+      - path: robot/EngineHead/EyeLid/HeadLight3/transform44
+        weight: 1
+      - path: robot/EngineHead/EyeLid/transform47
+        weight: 1
+      - path: robot/EngineHead/Gear1
+        weight: 1
+      - path: robot/EngineHead/Gear1/transform35
+        weight: 1
+      - path: robot/EngineHead/Gear2
+        weight: 1
+      - path: robot/EngineHead/Gear2/transform36
+        weight: 1
+      - path: robot/EngineHead/Gear3
+        weight: 1
+      - path: robot/EngineHead/Gear3/transform37
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6
+        weight: 1
+      - path: robot/EngineHead/PistonBottom6/transform43
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7
+        weight: 1
+      - path: robot/EngineHead/PistonBottom7/transform38
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8
+        weight: 1
+      - path: robot/EngineHead/PistonBottom8/transform41
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9
+        weight: 1
+      - path: robot/EngineHead/PistonBottom9/transform30
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10
+        weight: 1
+      - path: robot/EngineHead/PistonBottom10/transform34
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11
+        weight: 1
+      - path: robot/EngineHead/PistonBottom11/transform31
+        weight: 1
+      - path: robot/EngineHead/PistonTop6
+        weight: 1
+      - path: robot/EngineHead/PistonTop6/transform42
+        weight: 1
+      - path: robot/EngineHead/PistonTop7
+        weight: 1
+      - path: robot/EngineHead/PistonTop7/transform39
+        weight: 1
+      - path: robot/EngineHead/PistonTop8
+        weight: 1
+      - path: robot/EngineHead/PistonTop8/transform40
+        weight: 1
+      - path: robot/EngineHead/PistonTop9
+        weight: 1
+      - path: robot/EngineHead/PistonTop9/transform29
+        weight: 1
+      - path: robot/EngineHead/PistonTop10
+        weight: 1
+      - path: robot/EngineHead/PistonTop10/transform33
+        weight: 1
+      - path: robot/EngineHead/PistonTop11
+        weight: 1
+      - path: robot/EngineHead/PistonTop11/transform32
+        weight: 1
+      - path: robot/EngineHead/transform48
+        weight: 1
+      - path: robot/EngineHead/WireHead1
+        weight: 1
+      - path: robot/EngineHead/WireHead1/transform28
+        weight: 1
+      - path: robot/EngineHead/WireHead2
+        weight: 1
+      - path: robot/EngineHead/WireHead2/transform26
+        weight: 1
+      - path: robot/EngineHead/WireHead3
+        weight: 1
+      - path: robot/EngineHead/WireHead3/transform27
+        weight: 1
+      - path: robot/RobotPalm
+        weight: 1
+      - path: robot/RobotPalm/Finger1
+        weight: 1
+      - path: robot/RobotPalm/Finger1/transform12
+        weight: 1
+      - path: robot/RobotPalm/Finger2
+        weight: 1
+      - path: robot/RobotPalm/Finger2/transform11
+        weight: 1
+      - path: robot/RobotPalm/Finger3
+        weight: 1
+      - path: robot/RobotPalm/Finger3/transform10
+        weight: 1
+      - path: robot/RobotPalm/Thumb1
+        weight: 1
+      - path: robot/RobotPalm/Thumb1/transform13
+        weight: 1
+      - path: robot/RobotPalm/transform14
+        weight: 1
+      - path: robot/RobotPalm1
+        weight: 1
+      - path: robot/RobotPalm1/Finger4
+        weight: 1
+      - path: robot/RobotPalm1/Finger4/transform5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5
+        weight: 1
+      - path: robot/RobotPalm1/Finger5/transform6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6
+        weight: 1
+      - path: robot/RobotPalm1/Finger6/transform7
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2
+        weight: 1
+      - path: robot/RobotPalm1/Thumb2/transform8
+        weight: 1
+      - path: robot/RobotPalm1/transform9
+        weight: 1
+      - path: robot/WheelMount
+        weight: 1
+      - path: robot/WheelMount/transform20
+        weight: 1
+      - path: robot/WheelMount/Wheel5
+        weight: 1
+      - path: robot/WheelMount/Wheel5/transform19
+        weight: 1
+      - path: robot/WheelMount/Wheel6
+        weight: 1
+      - path: robot/WheelMount/Wheel6/transform18
+        weight: 1
+      - path: robot/WheelMount/Wheel7
+        weight: 1
+      - path: robot/WheelMount/Wheel7/transform17
+        weight: 1
+      - path: robot/WheelMount/Wheel8
+        weight: 1
+      - path: robot/WheelMount/Wheel8/transform16
+        weight: 1
+      - path: robot/WheelMount1
+        weight: 1
+      - path: robot/WheelMount1/transform25
+        weight: 1
+      - path: robot/WheelMount1/Wheel1
+        weight: 1
+      - path: robot/WheelMount1/Wheel1/transform21
+        weight: 1
+      - path: robot/WheelMount1/Wheel2
+        weight: 1
+      - path: robot/WheelMount1/Wheel2/transform22
+        weight: 1
+      - path: robot/WheelMount1/Wheel3
+        weight: 1
+      - path: robot/WheelMount1/Wheel3/transform23
+        weight: 1
+      - path: robot/WheelMount1/Wheel4
+        weight: 1
+      - path: robot/WheelMount1/Wheel4/transform24
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/L_Hip
+        weight: 1
+      - path: Root/L_Hip/L_Thigh
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot
+        weight: 1
+      - path: Root/L_Hip/L_Thigh/L_Knee/L_Ankle/L_Foot/L_Toes
+        weight: 1
+      - path: Root/R_Hip
+        weight: 1
+      - path: Root/R_Hip/R_Thigh
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot
+        weight: 1
+      - path: Root/R_Hip/R_Thigh/R_Knee/R_Ankle/R_Foot/R_Toes
+        weight: 1
+      - path: Root/Waist
+        weight: 1
+      - path: Root/Waist/Sternum
+        weight: 1
+      - path: Root/Waist/Sternum/Chest
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/L_Clavicle/L_Shoulder/L_Elbow/L_Wrist/L_Fingers/L_Fingertips
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/Neck
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers
+        weight: 1
+      - path: Root/Waist/Sternum/Chest/R_Clavicle/R_Shoulder/R_Elbow/R_Wrist/R_Fingers/R_Fingertips
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
