@@ -26,8 +26,11 @@ public class Ratchet : MonoBehaviour
 					}
 				}
 
-				Vector3 direction = transform.position - closest.transform.position;
-				transform.LookAt( transform.position + direction );
+				if ( Vector3.Distance( transform.position, closest.transform.position ) < 50f )
+				{
+					Vector3 direction = transform.position - closest.transform.position;
+					transform.LookAt( transform.position + direction );
+				}
 			}
 		}
 	}
