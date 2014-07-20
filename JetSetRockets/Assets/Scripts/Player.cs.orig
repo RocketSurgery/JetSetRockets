@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System;
 using System.Collections;
 
@@ -43,13 +43,31 @@ public class Player : MonoBehaviour
 
 	void Update()
 	{
+<<<<<<< HEAD
+<<<<<<< HEAD
 		pWeapon.WeaponUpdate (inputName, cam);
+=======
+		pAnimation.AnimationUpdate( cam.transform );
+>>>>>>> FETCH_HEAD
+=======
+		pAnimation.AnimationUpdate( cam.transform );
+>>>>>>> FETCH_HEAD
 	}
 
 	void FixedUpdate()
 	{
+<<<<<<< HEAD
+<<<<<<< HEAD
+		pCamera.CameraUpdate( inputName, cam );
+		pPhysics.PhysicsUpdate( inputName, cam );
 		pAnimation.AnimationUpdate( cam );
+=======
 		pCamera.CameraUpdate( inputName, cam.transform );
 		pPhysics.PhysicsUpdate( inputName, cam.transform );
+>>>>>>> FETCH_HEAD
+=======
+		pCamera.CameraUpdate( inputName, cam.transform );
+		pPhysics.PhysicsUpdate( inputName, cam.transform );
+>>>>>>> FETCH_HEAD
 	}
 }
