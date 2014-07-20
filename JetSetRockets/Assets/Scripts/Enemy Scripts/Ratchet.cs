@@ -43,12 +43,13 @@ public class Ratchet : MonoBehaviour
 		}
 	}
 
-	public void RocketHit( float hitDamage )
+	public void RocketHit( Rocket rocket, float hitDamage )
 	{
 		if ( !hit )
 		{
 			hit = true;
 			rigidbody.drag = 0f;
+			rocket.player.Score = rocket.player.Score + 1;
 			StartCoroutine( Explode() );
 		}
 	}

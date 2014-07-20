@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Rocket : MonoBehaviour
 {
-	Player player;
+	public Player player;
 	Vector3 velocity;
 	float hitRadius;
 	float damageMult = 1.0f;
@@ -62,7 +62,7 @@ public class Rocket : MonoBehaviour
 				tHit.GetComponent<PlayerPhysics>().RocketHit(hitDamage);
 				break;
 			case "Ratchet":
-				tHit.GetComponent<Ratchet>().RocketHit(hitDamage);
+				tHit.GetComponent<Ratchet>().RocketHit( this, hitDamage );
 				break;
 			case "RatchetHive":
 				//tHit.GetComponent<RatchetHive>().RocketHit(hitDamage);
