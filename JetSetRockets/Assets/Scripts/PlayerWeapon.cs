@@ -14,13 +14,13 @@ public class PlayerWeapon : MonoBehaviour
 	float cooldownTimer = 0.0f;
 
 	// Update is called once per frame
-	public void WeaponUpdate (string inputName, Transform cam) 
+	public void WeaponUpdate () 
 	{
 		if(Input.GetMouseButtonDown(0))
 		{
 			if(cooldownTimer > cooldownTime)
 			{
-				FireRocket(cam);
+				FireRocket();
 				cooldownTimer = 0.0f;
 			}
 		}
@@ -28,11 +28,11 @@ public class PlayerWeapon : MonoBehaviour
 		cooldownTimer += Time.deltaTime;
 	}
 
-	void FireRocket(Transform cam)
+	void FireRocket()
 	{
-		player.pAnimation.weapon.LookAt (cam.forward * 100);
+		player.pAnimation.weapon.LookAt (player.cam.transform.forward * 100);
 
-		Quaternion direction = Quaternion.FromToRotation (Vector3.forward, cam.forward * 100);
+		Quaternion direction = Quaternion.FromToRotation (Vector3.forward, player.cam.transform.forward * 100);
 		GameObject rocket = (GameObject)Instantiate (projectilePrefab, projectileSpawn.position, direction);
 
 		//float hitRadius = player.speed

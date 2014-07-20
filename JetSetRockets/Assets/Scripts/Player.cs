@@ -35,21 +35,20 @@ public class Player : MonoBehaviour
 		pCamera.player = this;
 		pAnimation.player = this;
 		pWeapon.player = this;
+		pGUI.player = this;
 
 		pCamera.camOffset = transform.position - cam.transform.position;
-		pGUI.cam = cam;
-		pGUI.physics = pPhysics;
 	}
 
 	void Update()
 	{
-		pWeapon.WeaponUpdate (inputName, cam);
+		pWeapon.WeaponUpdate ();
 	}
 
 	void FixedUpdate()
 	{
-		pAnimation.AnimationUpdate( cam );
-		pCamera.CameraUpdate( inputName, cam.transform );
-		pPhysics.PhysicsUpdate( inputName, cam.transform );
+		pAnimation.AnimationUpdate();
+		pCamera.CameraUpdate();
+		pPhysics.PhysicsUpdate();
 	}
 }

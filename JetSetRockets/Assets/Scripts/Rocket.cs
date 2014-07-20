@@ -32,7 +32,6 @@ public class Rocket : MonoBehaviour
 
 	void OnCollisionEnter(Collision collision)
 	{
-		Debug.Log("HIT");
 		Player playerHit = collision.transform.GetComponent<Player> ();
 
 		if(playerHit == player)

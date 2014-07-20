@@ -14,13 +14,13 @@ public class PlayerAnimation : MonoBehaviour
 	Vector3 lastVelocity = Vector3.zero;
 
 	// Update is called once per frame
-	public void AnimationUpdate( Transform cam )
+	public void AnimationUpdate( )
 	{
-		Orientation( cam );
-		WeaponLook( cam );
+		Orientation( );
+		WeaponLook( );
 	}
 
-	void Orientation( Transform cam )
+	void Orientation( )
 	{
 //		Vector3 velocity = rigidbody.velocity.normalized;
 //		Vector3 down = player.pPhysics.downVec.normalized;
@@ -36,7 +36,7 @@ public class PlayerAnimation : MonoBehaviour
 //
 //		Vector3 targetRot = velocity - Vector3.Project (velocity, -down);
 
-		Vector3 camForward = cam.transform.forward;
+		Vector3 camForward = player.cam.transform.forward;
 		Vector3 down = player.pPhysics.downVec.normalized;
 		Vector3 targetRot = camForward - Vector3.Project (camForward, -down);
 
@@ -45,10 +45,10 @@ public class PlayerAnimation : MonoBehaviour
 		                                 Time.deltaTime * orientSpeed);
 	}
 
-	void WeaponLook( Transform cam )
+	void WeaponLook( )
 	{
 		Quaternion currentRot = weapon.rotation;
-		weapon.LookAt (transform.position + cam.transform.forward * 50);
+		weapon.LookAt (transform.position + player.cam.transform.forward * 50);
 		Quaternion targetRot = weapon.rotation;
 
 		weapon.rotation = Quaternion.Lerp (currentRot, targetRot, Time.deltaTime * weaponLookSpeed);

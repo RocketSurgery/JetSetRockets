@@ -15,12 +15,13 @@ public class PlayerPhysics : MonoBehaviour
 	{
 		get
 		{
-			return defaultMaxSpeed;
+			return currentMaxSpeed;
 		}
 	}
 
 	float stopStrength = 0.0f;
-	[SerializeField] float stoppingTime = 0.5f;
+	float stopTimer = 0.0f;
+	[SerializeField] float stopTime = 0.5f;
 
 	Vector3 inputVec = Vector3.zero;
 	Vector3 moveVec = Vector3.zero;
@@ -60,16 +61,16 @@ public class PlayerPhysics : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	public void PhysicsUpdate( String inputName, Transform cam )
+	public void PhysicsUpdate( )
 	{
 		Jump();
 		CalculateDown();
 		Alignment();
 
 		Gravity();
-		Movement( inputName, cam );
+		Movement();
 
-		rigidbody.AddForce(moveVec + (downVec * currentGravity));
+		rigidbody.AddForce(moveVec + (downVec.normalized * currentGravity));
 		Stop();
 	}
 
@@ -80,31 +81,48 @@ public class PlayerPhysics : MonoBehaviour
 		{
 			lastContactPoints = collision.contacts;
 		}
+
+		switch(tag)
+		{
+		case "Rocket":
+			stopTimer = 0.0f;
+			break;
+		}
 	}
 
-	void Movement( String inputName, Transform cam )
+	void Movement( )
 	{
-		inputVec = new Vector3(Input.GetAxis( inputName + " Horizontal"), 0, Input.GetAxis( inputName + " Vertical" ));
+		inputVec = new Vector3(Input.GetAxis( player.inputName + " Horizontal"), 0, Input.GetAxis( player.inputName + " Vertical" ));
 
-		moveVec = cam.TransformDirection(inputVec);
+		moveVec = player.cam.transform.TransformDirection(inputVec);
 		moveVec -= Vector3.Project(moveVec, -downVec);
 		moveVec *= currentSpeed;
 	}
 
 	void Stop()
 	{
-		if(inputVec.magnitude < WadeUtils.SMALLNUM && isGrounded)
+		if(Math.Abs(inputVec.magnitude) < WadeUtils.SMALLNUM && isGrounded)
 		{
-			Mathf.SmoothDamp(0.0f, 1.0f, ref stopStrength, stoppingTime);
+			stopStrength = Mathf.Lerp(1.0f, 0.0f, stopTimer/stopTime);
 			stopStrength = Mathf.Clamp(stopStrength, 0.0f, 1.0f);
 
+			//Mathf.SmoothDamp(0.0f, 1.0f, ref stopStrength, stoppingTime);
+
 			Vector3 adjustedVel = rigidbody.velocity - Vector3.Project (rigidbody.velocity, -downVec);
-			Vector3 negForce = -(rigidbody.mass * adjustedVel) * stopStrength;
-			rigidbody.AddForce(negForce);
+
+			rigidbody.velocity -= adjustedVel;
+			rigidbody.velocity += adjustedVel * stopStrength;
+			//rigidbody.AddForce(negForce, ForceMode.VelocityChange);
+
+			if(stopTimer < stopTime)
+			{
+				stopTimer += Time.deltaTime;
+			}
 		}
 		else
 		{
-			stopStrength = 0.0f;
+			stopTimer = 0.0f;
+			stopStrength = 1.0f;
 		}
 	}
 
@@ -167,13 +185,15 @@ public class PlayerPhysics : MonoBehaviour
 		}
 		else
 		{
+			downVec = Vector3.zero;
+
 			// Ground align
 			int counter;
 			for(counter = 0; counter < lastContactPoints.Length; counter++)
 			{
 				downVec -= lastContactPoints[counter].normal;
 			}
-			downVec = (downVec * 1/counter).normalized;
+			downVec *= 1/counter;
 			airAlignTimer = 0.0f;
 		}
 	}

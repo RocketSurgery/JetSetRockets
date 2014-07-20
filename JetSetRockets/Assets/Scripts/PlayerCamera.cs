@@ -16,7 +16,7 @@ public class PlayerCamera : MonoBehaviour
 	[SerializeField] Vector2 lookSpeed = new Vector2(1.0f, 1.0f);
 
 	// Update is called once per frame
-	public void CameraUpdate( String inputName, Transform cam )
+	public void CameraUpdate( )
 	{
 		//Lock cursor
 		if( Input.GetMouseButtonDown(0) )
@@ -30,16 +30,16 @@ public class PlayerCamera : MonoBehaviour
 		}
 
 		// Rotate camera based on mouse move
-		camObj.RotateAround(camTarget.position, camObj.right, -Input.GetAxis( inputName + " Mouse Y" ) * lookSpeed.y);
-		camObj.RotateAround(camTarget.position, camObj.up, Input.GetAxis( inputName + " Mouse X" ) * lookSpeed.x);
+		camObj.RotateAround(camTarget.position, camObj.right, -Input.GetAxis( player.inputName + " Mouse Y" ) * lookSpeed.y);
+		camObj.RotateAround(camTarget.position, camObj.up, Input.GetAxis( player.inputName + " Mouse X" ) * lookSpeed.x);
 
-		camObj.position = camTarget.position - (cam.rotation * camOffset);
+		camObj.position = camTarget.position - (player.cam.transform.rotation * camOffset);
 
 		Vector3 localEuler = camObj.localEulerAngles;
 		localEuler.z = 0;
 		camObj.localEulerAngles = localEuler;
 
-		cam.position = Vector3.Lerp (cam.position, camObj.position, Time.deltaTime * followSpeed);
-		cam.rotation = Quaternion.Lerp (cam.rotation, camObj.rotation, Time.deltaTime * followSpeed);
+		player.cam.transform.position = Vector3.Lerp (player.cam.transform.position, camObj.position, Time.deltaTime * followSpeed);
+		player.cam.transform.rotation = Quaternion.Lerp (player.cam.transform.rotation, camObj.rotation, Time.deltaTime * followSpeed);
 	}
 }
