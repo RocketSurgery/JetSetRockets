@@ -13,6 +13,22 @@ public class Player : MonoBehaviour
 	public Camera cam;
 	public String inputName;
 
+	private int score = 0;
+
+	public int Score
+	{
+		get
+		{
+			return score;
+		}
+
+		set
+		{
+			score = value;
+			pGUI.score = score;
+		}
+	}
+
 	void Start()
 	{
 		pPhysics.player = this;
@@ -22,6 +38,7 @@ public class Player : MonoBehaviour
 
 		pCamera.camOffset = transform.position - cam.transform.position;
 		pGUI.cam = cam;
+		pGUI.physics = pPhysics;
 	}
 
 	void Update()

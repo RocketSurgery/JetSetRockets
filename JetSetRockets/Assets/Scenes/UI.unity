@@ -1335,7 +1335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &240636203
 Transform:
   m_ObjectHideFlags: 0
@@ -1366,6 +1366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+  score: 0
 --- !u!54 &240636205
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2477,7 +2478,7 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: .5
     width: 1
     height: .5
   near clip plane: .300000012
@@ -5150,6 +5151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+  score: 0
 --- !u!1 &1155930724
 GameObject:
   m_ObjectHideFlags: 0
@@ -6759,7 +6761,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
       propertyPath: m_NormalizedViewPortRect.height
@@ -7753,7 +7755,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100212, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 3fbdfe1a3f85d4067a861358b635b115, type: 2}
       propertyPath: m_NormalizedViewPortRect.y
