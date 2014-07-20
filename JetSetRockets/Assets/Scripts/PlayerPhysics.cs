@@ -8,10 +8,10 @@ public class PlayerPhysics : MonoBehaviour
 
 	// Movement
 	[SerializeField] int defaultMaxSpeed;
-	int currentMaxSpeed;
+	float currentMaxSpeed;
 	float currentSpeed;
 
-	public int MaxSpeed
+	public float MaxSpeed
 	{
 		get
 		{
@@ -56,6 +56,7 @@ public class PlayerPhysics : MonoBehaviour
 	{
 		downVec = -transform.up;
 		currentSpeed = defaultMaxSpeed;
+		currentMaxSpeed = defaultMaxSpeed;
 	}
 
 	// Update is called once per frame
