@@ -16,8 +16,8 @@ public class SoundManager : MonoBehaviour
 	[SerializeField] AudioClip[] sounds;
 	[SerializeField] AudioClip[] songs;
 
-	string soundTag = "soundSource";
-	string songTag = "songSource";
+	string soundTag = "SoundSource";
+	string songTag = "SongSource";
 	
 	GameObject sounderHolder;
 	GameObject songerHolder;
@@ -34,7 +34,7 @@ public class SoundManager : MonoBehaviour
 	[SerializeField] bool resetOnLoad = false;
 	
 	// Use this for initialization
-	void Start () 
+	void Awake () 
 	{
 		singleton.DontDestroyElseKill( this );
 

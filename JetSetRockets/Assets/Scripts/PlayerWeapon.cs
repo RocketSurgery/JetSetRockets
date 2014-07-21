@@ -16,7 +16,7 @@ public class PlayerWeapon : MonoBehaviour
 	// Update is called once per frame
 	public void WeaponUpdate () 
 	{
-		if(Input.GetMouseButtonDown(0))
+		if(Input.GetAxis(player.inputName + " Fire1") > 0.5f)
 		{
 			if(cooldownTimer > cooldownTime)
 			{
@@ -36,7 +36,7 @@ public class PlayerWeapon : MonoBehaviour
 		GameObject rocket = (GameObject)Instantiate (projectilePrefab, projectileSpawn.position, direction);
 
 		//float hitRadius = player.speed
-		float hitRadius = 5;
+		float hitRadius = 10;
 		rocket.GetComponent<Rocket> ().Setup (player, rocket.transform.forward * rocketSpeed + rigidbody.velocity, hitRadius);
 
 		if(player.pAnimation.mecanim.GetBool("isGrounded"))
@@ -45,6 +45,7 @@ public class PlayerWeapon : MonoBehaviour
 			player.pAnimation.mecanim.Play("JumpFire");
 
 		// Play rocket sound
+		SoundManager.singleton.instance.PlaySoundAtPosition ("rocket_launch", projectileSpawn.position);
 
 	}
 }

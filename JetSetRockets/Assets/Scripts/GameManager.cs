@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
 		{
 			players[i] = playerObjects[i].GetComponent<Player>();
 		}
+
+		SoundManager.singleton.instance.Play2DSong ("JETSETROCKET_LOOPQUALITY", 0.8f);
 	}
 
 	void Update()

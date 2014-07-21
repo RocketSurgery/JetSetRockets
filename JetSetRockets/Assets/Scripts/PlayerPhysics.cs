@@ -120,7 +120,7 @@ public class PlayerPhysics : MonoBehaviour
 	void OnCollisionStay(Collision collision)
 	{
 		string tag = collision.transform.tag;
-		if(tag != "Player" && tag != "Rocket")
+		if(tag != "Player" && tag != "Rocket" && tag != "Enemy")
 		{
 			lastContactPoints = collision.contacts;
 		}
@@ -181,14 +181,14 @@ public class PlayerPhysics : MonoBehaviour
 	{
 		if(player.pAnimation.mecanim.GetBool("isGrounded") && jumpTimer > jumpTime)
 		{
-			if(Input.GetButtonDown("Jump"))
+			if(Input.GetButtonDown(player.inputName + " Jump"))
 			{
 				player.pAnimation.mecanim.Play ("Jump");
 				currentGravity = 0.0f;
 				rigidbody.AddForce(-downVec * jumpForce);
 				jumpTimer = 0.0f;
 			}
-			else if(Input.GetMouseButtonDown(1))
+			else if(Input.GetAxis(player.inputName + " Fire2") > 0.5f)
 			{
 				player.pAnimation.mecanim.Play ("Jump");
 				currentGravity = 0.0f;

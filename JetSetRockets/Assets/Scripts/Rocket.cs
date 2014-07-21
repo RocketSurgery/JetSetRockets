@@ -32,30 +32,27 @@ public class Rocket : MonoBehaviour
 
 	void OnCollisionEnter(Collision collision)
 	{
+		Debug.Log(collision.transform.tag);
 		Player playerHit = collision.transform.GetComponent<Player> ();
 
 		if(playerHit == player)
-			return;
-
-		Transform tHit = collision.transform;
-
-
-		rigidbody.detectCollisions = false;
-		rigidbody.isKinematic = true;
-
-		foreach(Collider col in Physics.OverlapSphere(hitPoint, hitRadius))
 		{
-			hitDamage = Vector3.Distance(col.transform.position, hitPoint);
+			return;
+		}
+	
+		foreach(Collider col in Physics.OverlapSphere(collision.contacts[0].point, hitRadius))
+		{
+			hitDamage = Vector3.Distance(col.transform.position, collision.contacts[0].point);
 			hitDamage = hitDamage < 1.0 ? 100000 : hitDamage * damageMult;
 
 			// Explode
-			switch(tHit.tag)
+			switch(col.transform.tag)
 			{
 			case "Player":
-				tHit.GetComponent<PlayerPhysics>().RocketHit(hitDamage);
+				col.transform.GetComponent<PlayerPhysics>().RocketHit(hitDamage);
 				break;
-			case "Ratchet":
-				tHit.GetComponent<Ratchet>().RocketHit( this, hitDamage );
+			case "Enemy":
+				col.transform.GetComponent<Ratchet>().RocketHit( this, hitDamage );
 				break;
 			case "RatchetHive":
 				//tHit.GetComponent<RatchetHive>().RocketHit(hitDamage);
@@ -64,6 +61,9 @@ public class Rocket : MonoBehaviour
 				break;
 			}
 		}
+
+		rigidbody.detectCollisions = false;
+		rigidbody.isKinematic = true;
 
 		StartCoroutine(Explode());
 	}
@@ -78,6 +78,8 @@ public class Rocket : MonoBehaviour
 		ParticleSystem expParticle = expObj.GetComponent<ParticleSystem> ();
 		expParticle.emissionRate = hitDamage * emissionMod;
 		expParticle.startSpeed = hitDamage * speedMod;
+
+		SoundManager.singleton.instance.PlaySoundAtPosition ("rocket_explode", transform.position);
 
 		yield return new WaitForSeconds (expParticle.duration);
 		Destroy (expObj);

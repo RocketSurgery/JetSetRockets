@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
 	public Camera cam;
 	public String inputName;
 
+	Vector3 initPos;
+	Quaternion initRot;
+
 	private int score = 0;
 
 	public int Score
@@ -38,10 +41,20 @@ public class Player : MonoBehaviour
 		pGUI.player = this;
 
 		pCamera.camOffset = transform.position - cam.transform.position;
+		initPos = transform.position;
+		initRot = transform.rotation;
 	}
 
 	void Update()
 	{
+		if(Input.GetButtonDown(inputName + " Back"))
+		{
+			transform.position = initPos;
+			transform.rotation = initRot;
+			rigidbody.velocity = Vector3.zero;
+			pPhysics.downVec = Vector3.zero;
+		}
+
 		pWeapon.WeaponUpdate ();
 	}
 

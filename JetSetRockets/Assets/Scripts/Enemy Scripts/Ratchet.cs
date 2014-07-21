@@ -7,6 +7,21 @@ public class Ratchet : MonoBehaviour
 	bool hit = false;
 	float speed = 2f;
 
+	[SerializeField] float lookDist = 7.5f;
+	[SerializeField] float turnSpeed = 3.0f;
+
+	void Start()
+	{
+		StartCoroutine (StartAudio ());
+
+	}
+
+	IEnumerator StartAudio()
+	{
+		yield return new WaitForSeconds (Random.Range (0.0f, 1.0f));
+		SoundManager.singleton.instance.PlaySoundAndFollow ("enemy_grind", transform, 1.0f, true);
+	}
+
 	void Update()
 	{
 		if ( !hit )
@@ -39,6 +54,11 @@ public class Ratchet : MonoBehaviour
 	{
 		if ( !hit )
 		{
+			if(Physics.Raycast(transform.position, -transform.forward, lookDist))
+			{
+				rigidbody.AddTorque( transform.up * turnSpeed * Time.deltaTime, ForceMode.VelocityChange);
+			}
+
 			rigidbody.AddForce( -transform.forward * speed );
 		}
 	}
