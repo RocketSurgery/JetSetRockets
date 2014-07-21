@@ -21,10 +21,10 @@ public class PlayerAnimation : MonoBehaviour
 		Orientation( );
 		WeaponLook( );
 
-		if(mecanim.GetCurrentAnimatorStateInfo(0).IsName("Skate"))
-			mecanim.speed = rigidbody.velocity.magnitude/animSpeedMod * Mathf.Sign(Input.GetAxis( player.inputName + " Vertical" ));
-		else
-			mecanim.speed = 1.0f;
+//		if(mecanim.GetCurrentAnimatorStateInfo(0).IsName("Skate"))
+//			mecanim.speed = rigidbody.velocity.magnitude/animSpeedMod * Mathf.Sign(Input.GetAxis( player.inputName + " Vertical" ));
+//		else
+//			mecanim.speed = 1.0f;
 	}
 
 	void Start()

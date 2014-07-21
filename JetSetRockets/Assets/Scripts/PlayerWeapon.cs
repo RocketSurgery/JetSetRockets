@@ -30,7 +30,7 @@ public class PlayerWeapon : MonoBehaviour
 
 	void FireRocket()
 	{
-		player.pAnimation.weapon.LookAt (player.cam.transform.forward * 100);
+		//player.pAnimation.weapon.LookAt (player.cam.transform.forward * 100);
 
 		Quaternion direction = Quaternion.FromToRotation (Vector3.forward, player.cam.transform.forward * 100);
 		GameObject rocket = (GameObject)Instantiate (projectilePrefab, projectileSpawn.position, direction);

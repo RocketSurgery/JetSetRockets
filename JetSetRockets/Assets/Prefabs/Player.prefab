@@ -2423,7 +2423,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.09203005, y: .499990433, z: -4.33606577}
+  m_LocalPosition: {x: 17.9666176, y: 10.8858032, z: 29.3972454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400208}
@@ -4275,7 +4275,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -4514,7 +4514,7 @@ MonoBehaviour:
   defaultMaxSpeed: 50
   stopTime: 2
   jumpForce: 300
-  rocketJumpForce: 150
+  rocketJumpForce: 600
   downVec: {x: 0, y: 0, z: 0}
   maxGravity: 35
   gravityRate: 1.5
@@ -4573,6 +4573,7 @@ MonoBehaviour:
   orientSpeed: 8
   weapon: {fileID: 400198}
   weaponLookSpeed: 8
+  animSpeedMod: 1
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1

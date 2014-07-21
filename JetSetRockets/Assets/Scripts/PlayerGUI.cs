@@ -11,8 +11,8 @@ public class PlayerGUI : MonoBehaviour
 	{
 		// update bar width by averaging previous width and target width
 		// Debug.Log("magnitude: " + rigidbody.velocity.magnitude);
-		// Debug.Log("MaxSpeed: " + player.pPhysics.MaxSpeed);
-		float targetWidth = rigidbody.velocity.magnitude / player.pPhysics.MaxSpeed;
+		// Debug.Log("maxSpeed: " + player.pPhysics.maxSpeed);
+		float targetWidth = rigidbody.velocity.magnitude / player.pPhysics.maxSpeed;
 		// Debug.Log("targetWidth: " + targetWidth);
 		barWidth = ( barWidth + targetWidth ) / 2;
 		// Debug.Log("barWidth: " + barWidth);

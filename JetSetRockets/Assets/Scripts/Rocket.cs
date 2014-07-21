@@ -39,13 +39,9 @@ public class Rocket : MonoBehaviour
 	
 		Transform tHit = collision.transform;
 	
-		foreach(ContactPoint cp in collision.contacts)
-		{
-			hitPoint += cp.point;
-			hitNormal += cp.normal;
-		}
-		hitPoint *= 1 / collision.contacts.Length;
-		hitNormal *= 1 / collision.contacts.Length;
+		hitPoint = collision.contacts[0].point;
+		hitNormal = collision.contacts[0].normal;
+
 
 		rigidbody.detectCollisions = false;
 		rigidbody.isKinematic = true;

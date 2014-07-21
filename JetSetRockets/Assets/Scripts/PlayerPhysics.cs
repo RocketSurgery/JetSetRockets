@@ -8,10 +8,12 @@ public class PlayerPhysics : MonoBehaviour
 
 	// Movement
 	[SerializeField] int defaultMaxSpeed;
+	[SerializeField] float speedIncrement;
+	[SerializeField] float speedDecrement;
 	float currentMaxSpeed;
 	float currentSpeed;
 
-	public float MaxSpeed
+	public float maxSpeed
 	{
 		get
 		{
@@ -25,6 +27,8 @@ public class PlayerPhysics : MonoBehaviour
 
 	Vector3 inputVec = Vector3.zero;
 	Vector3 moveVec = Vector3.zero;
+//	Vector3 rightMoveVec = Vector3.zero;
+//	Vector3 forwardMoveVec = Vector3.zero;
 
 	// Jumping
 	[SerializeField] int jumpForce;
@@ -70,8 +74,48 @@ public class PlayerPhysics : MonoBehaviour
 		Movement();
 
 		rigidbody.AddForce(moveVec + (downVec.normalized * currentGravity));
+		//SpeedAdjustment ();
+
 		Stop();
 	}
+
+//	void SpeedAdjustment()
+//	{
+//		bool incSpeed = true;
+//		Vector3 moveVec = Vector3.zero;
+//
+//		Debug.Log ("Forwade move power: " + Mathf.Abs (player.cam.transform.TransformDirection (rigidbody.velocity).z));
+//
+//		if(Mathf.Abs(player.cam.transform.TransformDirection(rigidbody.velocity).z) <= currentMaxSpeed)
+//		{
+//			incSpeed = false;
+//			Debug.Log(forwardMoveVec);
+//			moveVec += forwardMoveVec;
+//
+//			if(currentSpeed > currentMaxSpeed)
+//			{
+//				currentSpeed -= Time.deltaTime * speedDecrement;
+//			}
+//		}
+//
+//		if(Mathf.Abs(player.cam.transform.TransformDirection(rigidbody.velocity).x) <= currentMaxSpeed)
+//		{
+//			incSpeed = false;
+//			moveVec += rightMoveVec;
+//			
+//			if(currentSpeed > currentMaxSpeed)
+//			{
+//				currentSpeed -= Time.deltaTime * speedDecrement;
+//			}
+//		}
+//
+//		if(incSpeed)
+//		{
+//			currentMaxSpeed += Time.deltaTime * speedIncrement;
+//		}
+//
+//		rigidbody.AddForce (moveVec + (downVec.normalized * currentGravity));
+//	}
 
 	void OnCollisionStay(Collision collision)
 	{
@@ -92,10 +136,18 @@ public class PlayerPhysics : MonoBehaviour
 	void Movement( )
 	{
 		inputVec = new Vector3(Input.GetAxis( player.inputName + " Horizontal"), 0, Input.GetAxis( player.inputName + " Vertical" ));
-
+		
 		moveVec = player.cam.transform.TransformDirection(inputVec);
 		moveVec -= Vector3.Project(moveVec, -downVec);
 		moveVec *= currentSpeed;
+
+//		forwardMoveVec = player.cam.transform.TransformDirection(0, 0, Input.GetAxis(player.inputName + " Vertical"));
+//		forwardMoveVec -= Vector3.Project(forwardMoveVec, -downVec);
+//		forwardMoveVec = forwardMoveVec.normalized * currentSpeed;
+//
+//		rightMoveVec = player.cam.transform.TransformDirection(Input.GetAxis(player.inputName + " Horizontal"), 0, 0);
+//		rightMoveVec = -Vector3.Project (rightMoveVec, -downVec);
+//		rightMoveVec = rightMoveVec.normalized * currentSpeed;
 	}
 
 	void Stop()
@@ -127,12 +179,22 @@ public class PlayerPhysics : MonoBehaviour
 
 	void Jump()
 	{
-		if(player.pAnimation.mecanim.GetBool("isGrounded") && Input.GetButtonDown("Jump") && jumpTimer > jumpTime)
+		if(player.pAnimation.mecanim.GetBool("isGrounded") && jumpTimer > jumpTime)
 		{
-			player.pAnimation.mecanim.Play ("Jump");
-			currentGravity = 0.0f;
-			rigidbody.AddForce(-downVec * jumpForce);
-			jumpTimer = 0.0f;
+			if(Input.GetButtonDown("Jump"))
+			{
+				player.pAnimation.mecanim.Play ("Jump");
+				currentGravity = 0.0f;
+				rigidbody.AddForce(-downVec * jumpForce);
+				jumpTimer = 0.0f;
+			}
+			else if(Input.GetMouseButtonDown(1))
+			{
+				player.pAnimation.mecanim.Play ("Jump");
+				currentGravity = 0.0f;
+				rigidbody.AddForce(-downVec * rocketJumpForce);
+				jumpTimer = 0.0f;
+			}
 		}
 
 		jumpTimer += Time.deltaTime;
@@ -158,7 +220,9 @@ public class PlayerPhysics : MonoBehaviour
 		else if(lateJumpTimer > lateJumpTime)
 		{
 			player.pAnimation.mecanim.SetBool("isGrounded", false);
-			currentGravity += gravityRate;
+
+			if(currentGravity < maxGravity)
+				currentGravity += gravityRate;
 		}
 
 		lateJumpTimer += Time.deltaTime;

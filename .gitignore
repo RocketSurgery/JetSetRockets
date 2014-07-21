@@ -15,3 +15,7 @@
 *.sln
 
 *.csproj
+
+*.meta
+
+*.unityproj
