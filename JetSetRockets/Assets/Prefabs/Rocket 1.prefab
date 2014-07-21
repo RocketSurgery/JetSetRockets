@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.6548138, y: 30.1617813, z: 33.96101}
+  m_LocalPosition: {x: -159.868637, y: 93.7358322, z: 172.211716}
   m_LocalScale: {x: .137839749, y: .137839764, z: .137839764}
   m_Children:
   - {fileID: 400000}
@@ -91,7 +91,7 @@ Transform:
   m_RootOrder: 1
 --- !u!23 &2300000
 Renderer:
-  m_ObjectHideFlags: 13
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
@@ -111,7 +111,7 @@ Renderer:
   m_SortingOrder: 0
 --- !u!33 &3300000
 MeshFilter:
-  m_ObjectHideFlags: 13
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
@@ -183,7 +183,7 @@ MonoBehaviour:
   speedMod: 2
 --- !u!136 &13600000
 CapsuleCollider:
-  m_ObjectHideFlags: 13
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}

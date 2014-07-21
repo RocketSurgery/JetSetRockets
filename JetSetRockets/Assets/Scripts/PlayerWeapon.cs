@@ -16,7 +16,7 @@ public class PlayerWeapon : MonoBehaviour
 	// Update is called once per frame
 	public void WeaponUpdate () 
 	{
-		if(Input.GetAxis(player.inputName + " Fire1") > 0.5f)
+		if(Input.GetAxis(player.inputName + " Fire1") > 0.3f)
 		{
 			if(cooldownTimer > cooldownTime)
 			{
