@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class Rocket : MonoBehaviour
@@ -38,7 +38,21 @@ public class Rocket : MonoBehaviour
 			return;
 
 		Transform tHit = collision.transform;
+<<<<<<< HEAD
+	
+		hitPoint = collision.contacts[0].point;
+		hitNormal = collision.contacts[0].normal;
 
+=======
+
+		foreach(ContactPoint cp in collision.contacts)
+		{
+			hitPoint += cp.point;
+			hitNormal += cp.normal;
+		}
+		hitPoint *= 1 / collision.contacts.Length;
+		hitNormal *= 1 / collision.contacts.Length;
+>>>>>>> FETCH_HEAD
 
 		rigidbody.detectCollisions = false;
 		rigidbody.isKinematic = true;
